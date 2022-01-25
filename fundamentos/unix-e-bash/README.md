@@ -34,7 +34,7 @@ SQL
 15. Mostre na tela as 4 últimas skills do arquivo skills.txt.
 16. Apague todos os arquivos que terminem em .txt.
 
-## Parte II - _[Manipulação & Busca](https://github.com/giuseppeusn/trybe_exercicios/blob/master/fundamentos/unix-e-bash/exercicios/ex-2.sh)_
+## Parte II - _[Manipulação & Busca](https://github.com/giuseppeusn/trybe_exercicios/blob/main/fundamentos/unix-e-bash/exercicios/ex-2.sh)_
 
 Na pasta unix_tests, baixe um arquivo com os nomes de todos os países do mundo utilizando o comando curl:
 
