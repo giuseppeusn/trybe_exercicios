@@ -1,4 +1,4 @@
-# Exercício 2 - _[Merge, Push, Pull Request](https://github.com/giuseppeusn/trybe_exercicios/blob/master/fundamentos/git-github-e-internet/exercicios/ex-2.sh)_
+# Exercício 2 - _[Merge, Push, Pull Request](https://github.com/giuseppeusn/trybe_exercicios/blob/main/fundamentos/git-github-e-internet/exercicios/ex-2.sh)_
 
 1. Navegue até a raiz do projeto com o arquivo.txt;
 2. Verifique se não existe nada sem "commitar" utilizando git status:
