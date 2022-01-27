@@ -1,4 +1,15 @@
-#menu ul {
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#foto {
+    display:block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.menu ul {
     padding:0px;
     margin: 0px;        
     list-style:none;
@@ -6,6 +17,6 @@
     text-decoration: none;
 }
 
-#menu ul li {
+.menu ul li {
     display:inline;
 }
