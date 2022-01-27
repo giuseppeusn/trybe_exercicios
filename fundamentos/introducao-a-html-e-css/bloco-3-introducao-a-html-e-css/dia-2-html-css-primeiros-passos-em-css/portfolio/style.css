@@ -1,22 +1,30 @@
+*{
+    margin: 0;
+}
+
 body{
     background-color: #023047;
+    
 }
 
 h1 {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     color: #fff;
+    margin-top: 50px;
 }
 
 h3 {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     color: white;
+    margin-top: 50px;
 }
 
 p {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
+    margin-top: 50px;
 }
 
 #foto {
@@ -25,6 +33,7 @@ p {
     border-radius: 50%;
     border: 2px solid #219ebc;
     padding: 5px;
+    margin-top: 50px;
 }
 
 .hab-itens ul {
@@ -35,21 +44,27 @@ p {
 }
 
 .menu ul {
-    padding:0px;
-    margin: 0px;        
+    margin: 0 auto;      
     list-style:none;
-    text-align: center;
-    text-decoration: none;
+    overflow: hidden;
+    background-color: #fb8500;
 }
 
-.menu ul li {
-    display:inline;
-    padding: 5px;
-    font-weight: bold;
+.menu ul li {   
+    float: left;
+    text-align: center;   
 }
 
-.menu ul li a {
+li a {
+    display: block;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    padding: 14px 16px; 
+    text-align: center;
+}
+
+li a:hover {
+    background-color: #ffb703; 
 }
