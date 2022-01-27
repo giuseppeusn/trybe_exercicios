@@ -1,5 +1,5 @@
 body{
-    background-color: #219ebc;
+    background-color: #023047;
 }
 
 h1 {
@@ -23,6 +23,8 @@ p {
     display:block;
     margin: 0 auto;
     border-radius: 50%;
+    border: 2px solid #219ebc;
+    padding: 5px;
 }
 
 .hab-itens ul {
@@ -42,6 +44,8 @@ p {
 
 .menu ul li {
     display:inline;
+    padding: 5px;
+    font-weight: bold;
 }
 
 .menu ul li a {
