@@ -1,3 +1,23 @@
 div:hover {
-    border: 2px solid blue;
+    border: 2px solid black;
+}
+
+div:first-of-type{
+    background-color: #F0D656;
+}
+
+div:nth-of-type(2){
+    background-color:#D9CF43;
+}
+
+div:nth-of-type(3){
+    background-color: #F8B94D;
+}
+
+div:nth-of-type(4){
+    background-color: #D9B143;
+}
+
+div:nth-of-type(5){
+    background-color: #E3F84D;
 }
