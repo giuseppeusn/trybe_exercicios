@@ -2,10 +2,10 @@ ol{
     background-color: yellow;
 }
 
-li:nth-child(even){
+ol li:nth-child(even){
     color: green;
 }
 
-li:nth-child(odd){
+ol li:nth-child(odd){
     text-transform: lowercase;
 }
