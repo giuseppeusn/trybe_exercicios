@@ -28,5 +28,9 @@ li em{
 }
 
 ul:first-of-type li:nth-child(-n+3){
-    background-color: blue;
+    color: blue;
+}
+
+.java {
+    background-color: pink;
 }
