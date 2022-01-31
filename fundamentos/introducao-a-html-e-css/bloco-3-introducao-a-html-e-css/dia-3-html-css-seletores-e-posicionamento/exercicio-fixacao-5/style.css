@@ -34,3 +34,27 @@ ul:first-of-type li:nth-child(-n+3){
 .java {
     background-color: pink;
 }
+
+.aliados li a:hover{
+    font-weight: 800;
+}
+
+.aliados li a[href*="stack"]{
+    color: orange;
+} 
+
+.aliados li a[href*="w3"]{
+    color: green;
+} 
+
+.aliados li a[href*="mozilla"]{
+    color: black;
+} 
+
+.aliados li a[href*="docs"]{
+    color: yellow;
+} 
+
+.aliados li a[href*="trybe"]{
+    color: green;
+} 
