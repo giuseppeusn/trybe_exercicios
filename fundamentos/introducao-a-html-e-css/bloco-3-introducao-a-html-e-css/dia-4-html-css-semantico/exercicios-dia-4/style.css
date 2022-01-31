@@ -7,6 +7,10 @@ h3, p{
     margin-top: 15px;
 }
 
+.fatos, .soco, .superpoder, .veloc p{
+    text-align: justify;
+}
+
 body{
     background-color: rgba(0, 204, 255, 0.533);
     font-family: Arial, Helvetica, sans-serif;
@@ -16,8 +20,8 @@ body{
     text-align: center;
     color: white;
     background-color: rgba(88, 89, 92, 0.158);
-    height: 80px;
-    padding-top: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .menu {
@@ -59,10 +63,17 @@ body{
     text-align: center;
 }
 
-.fatos img-1{
+.class-cient ul {
+    margin-top: 15px;
+    margin-left: 30px;
+
+}
+
+.fatos img{
     display: inline;
-    margin-left: 20%;
-    width: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 500px;
     margin-top: 15px;
 }
 
@@ -100,4 +111,18 @@ footer{
 footer p{
     font-size: 15px;
     font-weight: 500;
+}
+
+
+.ref ul{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.ref li{
+    padding: 5px;
+}
+
+.ref a:hover{
+    font-size: 15px;
 }
