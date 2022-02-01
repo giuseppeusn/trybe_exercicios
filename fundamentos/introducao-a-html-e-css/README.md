@@ -2,7 +2,7 @@
 
 Neste bloco aprendemos como estruturar páginas HTML estilizadas com o CSS de uma forma muito prática e criando vários projetos.
 
-## Conhecimentos adquiridos:
+## Conhecimentos adquiridos
 
 * Estruturas de páginas HTML
   * _[Exercícios desenvolvidos](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/introducao-a-html-e-css/bloco-3-introducao-a-html-e-css/dia-1-html-css-estruturas-de-paginas)_
