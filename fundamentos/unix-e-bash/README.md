@@ -1,6 +1,6 @@
-# Unix & Shell
+# Bloco 1 - Unix & Shell
 
-Aprendemos sobre como o Unix funciona, assim como a forma de interação via linha de comando
+Neste bloco aprendemos sobre como o Unix funciona, assim como a forma de interação via linha de comando
 
 ## Conhecimentos adquiridos
 - Executar comandos no terminal, navegar por diretórios, criar e manipular arquivos e diretórios e realizar buscas
