@@ -1,10 +1,12 @@
+//----------- Exercicio 5 -----------
+
 const x = 101;
 const y = 45;
-const z = '33';
+const z = -34;
 
 if ((x + y + z ) === 180) {
   console.log(true);
-} else if (typeof x === "number" || typeof y === "number"|| typeof z === "number") {
+} else if (x < 0 || y < 0 || z < 0) {
   console.log("Inválido");
 } else {
   console.log(false);
