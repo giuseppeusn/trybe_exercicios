@@ -1,4 +1,4 @@
-//----------- Exercicio 5 -----------
+//----------- Exercicio 6 -----------
 
 const x = "REI";
 const peca = x.toLowerCase();
