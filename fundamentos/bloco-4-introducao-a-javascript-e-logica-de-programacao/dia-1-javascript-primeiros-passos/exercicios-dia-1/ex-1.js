@@ -1,8 +1,8 @@
 //----------- Exercicio 1 -----------
 
-let a = 3;
-let b = 4;
-let result;
+const a = 3;
+const b = 4;
+const result;
 
 //----------- Exercicio 1.1 -----------
 
@@ -28,3 +28,4 @@ console.log(result);
 
 result = a % b;
 console.log(result);
+

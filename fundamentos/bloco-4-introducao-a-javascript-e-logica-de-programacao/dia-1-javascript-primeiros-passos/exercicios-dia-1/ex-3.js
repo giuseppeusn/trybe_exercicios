@@ -1,8 +1,8 @@
 //----------- Exercicio 3 -----------
 
-let a = 30;
-let b = 25;
-let c = 20;
+const a = 30;
+const b = 25;
+const c = 20;
 
 if (a > b && a > c) {
   console.log("O maior número é: ", a);
