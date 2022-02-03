@@ -3,7 +3,7 @@
 const produto = 3;
 const venda = 8;
 
-const valorCusto = produto + (20/100);
+const valorCusto = produto + ((20 / 100) * produto);
 const lucro = venda - valorCusto;
 
 if (produto < 0 || venda < 0) {
