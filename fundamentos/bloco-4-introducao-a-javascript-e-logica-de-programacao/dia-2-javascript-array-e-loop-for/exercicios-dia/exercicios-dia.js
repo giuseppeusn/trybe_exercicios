@@ -100,5 +100,5 @@ let result = 0;
 
 for (y of myArray) {
   result = y/2;
-  console.log(result);
+  //console.log(result);
 }
