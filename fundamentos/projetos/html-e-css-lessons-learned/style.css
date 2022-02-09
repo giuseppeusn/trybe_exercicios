@@ -1,0 +1,148 @@
+body {
+  background-color: rgb(253, 251, 251);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 25px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin-top: 100px;
+
+}
+
+p {
+  text-align: justify;
+}
+
+#cabecalho {
+  position: fixed;
+  top: 0;
+  border-bottom: 7px solid rgb(47, 193, 139);
+  background-color: rgb(3, 107, 82);
+  width: 100%;
+  color: white;
+  padding: 8px;
+  z-index: 99;
+}
+
+#titulo {
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+#cabecalho nav {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+  float: right;
+}
+
+#cabecalho ul {
+  overflow: hidden;
+}
+
+.listas table , ol , li {
+  text-align: center;
+}
+
+#cabecalho li {
+  display: inline-block;
+}
+
+.link_trybe a {
+  color: black;
+}
+
+#cabecalho a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 0 15px 15px;
+}
+
+#cabecalho a:hover {
+  color: rgb(47, 193, 139);
+}
+
+#minha_foto {
+  float: right;
+  width: 300px;
+  border-radius: 50%;
+  margin-right: 30px;
+  border: 3px solid rgb(47, 193, 139);
+  padding: 2px;
+  box-shadow: 4px 5px 4px rgb(0 0 0 / 40%);
+}
+
+.tab-cont {
+  float: right;
+  margin-right: 30px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.tab-cont td , th {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.tab-cont td:nth-child( even ) {
+  text-align: center;
+}
+
+.lado-direito {
+  display: inline-block;
+  margin-left: 20px;
+  width: 35%;
+}
+
+.lado-esquerdo {
+  display: inline-block;
+  margin-left: 20px;
+  width: 35%;
+}
+
+.artigo article , .aprendizado aside {
+  margin-top: 15px;
+}
+
+.listas {
+  display: inline-block;
+  margin-top: 50px;
+}
+
+#licoes_aprendidas {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+#licoes_a_aprender {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.link_trybe {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#rodape {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(68, 73, 85);
+  height: 50px;
+}
+
+#rodape h3 {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
