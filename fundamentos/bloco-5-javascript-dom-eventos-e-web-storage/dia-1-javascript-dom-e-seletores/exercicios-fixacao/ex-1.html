@@ -3,9 +3,9 @@
   <body>
     <header>
       <h2 id="page-title">Título</h2>
-      <p id="paragraph">Dê uma cor para este parágrafo!</p>
+      <p id="paragraph" class='paragrafo'>Dê uma cor para este parágrafo!</p>
       <h4 id="subtitle">Subtítulo</h4>
-      <p id="second-paragraph">Segundo parágrafo!</p>
+      <p id="second-paragraph" class='paragrafo'>Segundo parágrafo!</p>
     </header>
     <script>
       const pageTitle = document.getElementById("page-title");
@@ -32,6 +32,25 @@
       // ---------- Exercicio 4 ----------
 
       subtitle.innerHTML = 'Sinopse';
+
+      // ---------- Exercicio 5 ----------
+
+      //adicionado classe (class='paragrafo') aos paragrafos
+
+      // ---------- Exercicio 6 ----------
+
+      let array = document.getElementsByClassName('paragrafo');
+      for (x in array) {
+        console.log(array[x]);
+      }
+
+      // ---------- Exercicio 7 ----------
+
+      array[0].style.textAlign = 'center';
+
+      // ---------- Exercicio 8 ----------
+
+      document.getElementsByTagName('h4')[0].style.color = 'red';
 
     </script>
   </body>
