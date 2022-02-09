@@ -1,15 +1,15 @@
-let primo = [];
+let maior = 0;
 
-for(let x = 0; x <= 50; x += 1) {
-  if((x % 1) === 0 && (x % x) === 0) {
-    primo.push(x);
+for (let x = 0; x <= 50; x += 1) {
+  let primo = true;
+  for (let y = 2; y < x; y += 1) {
+    if (x % y === 0) {
+      primo = false;
+    } 
   }
+  if (primo) {
+    maior = x;
+  } 
 }
 
-console.log(primo);
-
-// for(let y = 0; y < count.length; y += 1) {  
-//   if(word.length > count[count.length - 1]) {
-//     maior = x;
-//   }
-// }
+console.log(maior);
