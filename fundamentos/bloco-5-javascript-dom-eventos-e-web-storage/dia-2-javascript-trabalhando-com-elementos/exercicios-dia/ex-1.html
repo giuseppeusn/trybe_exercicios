@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // ---------- Exercicio 1 ----------
+
+      let body = document.querySelector('body');
+      let h1 = document.createElement('h1');
+      body.appendChild(h1);
+      let firstText = document.querySelector('h1');
+      firstText.innerText = 'Exercício 5.2 - JavaScript DOM como filho da tag body';
+
+      // ---------- Exercicio 2 ----------
+
+      let main = document.createElement('main');
+      body.appendChild(main);
+
+      // ---------- Exercicio 3 ----------
+
+      let content = document.querySelector('main');
+      let section = document.createElement('section');
+      content.appendChild(section);
+      let secao = document.querySelector('section');
+      secao.className = 'center-content';
+
+      // ---------- Exercicio 4 ----------
+      
+      let paragraph = document.createElement('p');
+      secao.appendChild(paragraph);
+      let p = document.querySelector('p');
+      p.innerText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.';
+
+      // ---------- Exercicio 5 ----------
+
+      let section2 = document.createElement('section');
+      content.appendChild(section2);
+      let secao2 = document.querySelectorAll('section')[1];
+      secao2.className = 'left-content';
+
+      // ---------- Exercicio 6 ----------
+
+      let section3 = document.createElement('section');
+      content.appendChild(section3);
+      let secao3 = document.querySelectorAll('section')[2];
+      secao3.className = 'right-content'
+
+      // ---------- Exercicio 7 ----------
+
+      let img = document.createElement('img');
+      secao2.appendChild(img);
+      let imagem = document.querySelector('img');
+      imagem.setAttribute('src','https://picsum.photos/200');
+      imagem.className = 'small-image';
+
+      // ---------- Exercicio 8 ----------      
+
+      let numbers = ['um','dois','três','quatro','cinco','seis','sete','oito','nove','dez'];
+
+      for (let x = 0; x < numbers.length; x += 1) {
+        let list = document.createElement('li');
+        secao3.appendChild(list);
+        document.querySelectorAll('li')[x].innerText = numbers[x];
+      }
+
+      // ---------- Exercicio 9 ---------- 
+
+      for (let x = 0; x < 3; x += 1) {
+        let h3 = document.createElement('h3');
+        content.appendChild(h3);
+      }
+
+      let h3Text = document.querySelectorAll('h3');
+
+      // ---------- Exercicio 1.1 ---------- 
+
+      firstText.className = 'title';
+
+      // ---------- Exercicio 2.1 ---------- 
+
+      for (x in h3Text) {
+        h3Text[x].className = 'description';
+      }
+      
+      // ---------- Exercicio 3.1 ---------- 
+      
+      main.removeChild(secao2);
+
+      // ---------- Exercicio 4.1 ---------- 
+      
+      secao3.style.textAlign= 'center';
+
+      // ---------- Exercicio 5.1 ---------- 
+
+      secao.parentNode.style.backgroundColor = 'green';
+      
+      // ---------- Exercicio 6.1 ---------- 
+
+      let item9 = document.querySelectorAll('li')[8];
+      let item10 = document.querySelectorAll('li')[9];
+      secao3.removeChild(item9);
+      secao3.removeChild(item10);
+
+    </script>
+  </body>
+</html>
