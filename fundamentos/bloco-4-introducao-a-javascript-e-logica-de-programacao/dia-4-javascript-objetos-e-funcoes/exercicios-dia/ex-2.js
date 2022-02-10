@@ -85,4 +85,20 @@ function contNum(arrayNum) {
   return maior;
 }
 
-console.log(contNum([2, 3, 2, 5, 8, 2, 3]));
+// console.log(contNum([2, 3, 2, 5, 8, 2, 3]));
+
+// ----------- Exercicio 6 -----------
+
+function sumNum(num) {
+  let sum = 0;
+
+  for (let x = 1; x <= num; x += 1) {
+    sum += x;
+  }
+
+  return sum;
+}
+
+// console.log(sumNum(5));
+
+// ----------- Exercicio 7 -----------
