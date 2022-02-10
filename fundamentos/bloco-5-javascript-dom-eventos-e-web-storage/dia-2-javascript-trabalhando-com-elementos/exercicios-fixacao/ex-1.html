@@ -32,8 +32,8 @@
 
     // ---------- Exercicio 3 ----------
 
-    let filhoDoFilo = partida.firstElementChild;
-    filhoDoFilo.innerText = 'Texto';
+    let filhoDoFilho = partida.firstElementChild;
+    filhoDoFilho.innerText = 'Texto';
     
     // ---------- Exercicio 4 ----------
 
@@ -59,6 +59,29 @@
 
     let terceiroFilho2 = pai.lastElementChild.previousElementSibling;
     console.log(terceiroFilho2);
+
+    // ---------- Exercicio 9 ----------
+
+    let irmaoPartida = document.createElement('section');
+    irmaoPartida.setAttribute("id","irmaoPartida");
+    partida.parentNode.appendChild(irmaoPartida);
+
+    // ---------- Exercicio 9 ----------
+
+    let filhoPartida = document.createElement('section');
+    filhoPartida.setAttribute("id","filhoPartida");
+    partida.appendChild(filhoPartida);
+
+    // ---------- Exercicio 9 ----------
+
+    let filhoFilhoDoFilho = document.createElement('section');
+    filhoFilhoDoFilho.setAttribute("id","filhoFilhoDoFilho");
+    filhoDoFilho.appendChild(filhoFilhoDoFilho);
+
+    // ---------- Exercicio 10 ----------
+
+    let terceiroFilho3 = filhoFilhoDoFilho.parentNode.parentNode.nextElementSibling;
+    console.log(terceiroFilho3);
 
   </script>
 </body>
