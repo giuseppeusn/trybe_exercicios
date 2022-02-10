@@ -83,6 +83,22 @@
     let terceiroFilho3 = filhoFilhoDoFilho.parentNode.parentNode.nextElementSibling;
     console.log(terceiroFilho3);
 
+    // ---------- Exercicio 11 ----------
+
+    pai.removeChild(primeiroFilho);
+    let segundoFilho = filhoDoFilho.nextElementSibling;
+    partida.removeChild(segundoFilho);
+    partida.removeChild(filhoPartida);
+
+    let master = pai.children;
+    
+    for (let x = 1; x < master.length; x) {
+
+      pai.removeChild(master[x]);
+    }
+
+    partida.nextSibling.remove();
+
   </script>
 </body>
 </html>
