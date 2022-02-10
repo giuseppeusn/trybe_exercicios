@@ -7,14 +7,13 @@ function palindromo (word) {
   newWord.reverse();
 
   if(arrayWord === newWord.join('')){
-    console.log(true);
-  } else {
-    console.log(false);
+    return true;
   }
 
+  return false;
 } 
 
-// palindromo('arara');
+// console.log(palindromo('arara'));
 
 // ----------- Exercicio 2 -----------
 
@@ -28,10 +27,10 @@ function maiorValor (arrayNum) {
       maior = x;
     }
   }
-  console.log(maior);
+  return maior
 }
 
-// maiorValor([2, 3, 6, 7, 10, 1]);
+// console.log(maiorValor([2, 3, 6, 7, 10, 1]));
 
 // ----------- Exercicio 3 -----------
 
@@ -45,10 +44,10 @@ function menorValor (arrayNum) {
       menor = x;
     }
   }
-  console.log(menor);
+  return menor;
 }
 
-// menorValor([2, 4, 6, 7, 10, 0, -3]);
+// console.log(menorValor([2, 4, 6, 7, 10, 0, -3]));
 
 // ----------- Exercicio 4 -----------
 
@@ -64,13 +63,26 @@ function contCaract(arrayWords) {
       maior = word.join('');
     }
   }
-  console.log(maior);
+  return maior;
 }
 
-// contCaract(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']);
+// console.log(contCaract(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
 
 // ----------- Exercicio 5 -----------
 
 function contNum(arrayNum) {
-  
+  let maior = 0;
+  let cont = {};
+
+  arrayNum.forEach(function(x) { cont[x] = (cont[x] || 0)+1; });
+
+  for (x in cont) {
+    if(cont[x] > maior) {
+      maior = x;
+    } 
+  }
+
+  return maior;
 }
+
+console.log(contNum([2, 3, 2, 5, 8, 2, 3]));
