@@ -62,7 +62,8 @@
       let body = document.querySelector('body');
       let h1 = document.createElement('h1');
       body.appendChild(h1);
-      document.querySelector('h1').innerText = 'Exercício 5.2 - JavaScript DOM como filho da tag body';
+      let firstText = document.querySelector('h1');
+      firstText.innerText = 'Exercício 5.2 - JavaScript DOM como filho da tag body';
 
       // ---------- Exercicio 2 ----------
 
@@ -122,7 +123,38 @@
         let h3 = document.createElement('h3');
         content.appendChild(h3);
       }
+
+      let h3Text = document.querySelectorAll('h3');
+
+      // ---------- Exercicio 1.1 ---------- 
+
+      firstText.className = 'title';
+
+      // ---------- Exercicio 2.1 ---------- 
+
+      for (x in h3Text) {
+        h3Text[x].className = 'description';
+      }
       
+      // ---------- Exercicio 3.1 ---------- 
+      
+      main.removeChild(secao2);
+
+      // ---------- Exercicio 4.1 ---------- 
+      
+      secao3.style.textAlign= 'center';
+
+      // ---------- Exercicio 5.1 ---------- 
+
+      secao.parentNode.style.backgroundColor = 'green';
+      
+      // ---------- Exercicio 6.1 ---------- 
+
+      let item9 = document.querySelectorAll('li')[8];
+      let item10 = document.querySelectorAll('li')[9];
+      secao3.removeChild(item9);
+      secao3.removeChild(item10);
+
     </script>
   </body>
 </html>
