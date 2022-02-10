@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+  </main>
+  <script>
+    // ---------- Exercicio 1 ----------
+
+    let partida = document.querySelector('#elementoOndeVoceEsta');
+    console.log(partida);
+
+    // ---------- Exercicio 2 ----------
+
+    let pai = partida.parentElement;
+    pai.style.backgroundColor = 'green';
+
+    // ---------- Exercicio 3 ----------
+
+    let filhoDoFilo = partida.firstElementChild;
+    filhoDoFilo.innerText = 'Texto';
+    
+    // ---------- Exercicio 4 ----------
+
+    let filho = pai.firstElementChild;
+    console.log(filho);
+
+    // ---------- Exercicio 5 ----------
+    
+    let filho2 = partida.previousElementSibling;
+    console.log(filho2);
+
+    // ---------- Exercicio 6 ----------
+
+    let atencao = partida.nextSibling;
+    console.log(atencao);
+
+    // ---------- Exercicio 7 ----------
+
+    let terceiroFilho = partida.nextElementSibling;
+    console.log(terceiroFilho);
+
+    // ---------- Exercicio 8 ----------
+
+    let terceiroFilho2 = pai.lastElementChild.previousElementSibling;
+    console.log(terceiroFilho2);
+
+  </script>
+</body>
+</html>
