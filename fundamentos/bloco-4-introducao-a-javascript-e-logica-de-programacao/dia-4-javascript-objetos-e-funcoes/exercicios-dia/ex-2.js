@@ -102,3 +102,25 @@ function sumNum(num) {
 // console.log(sumNum(5));
 
 // ----------- Exercicio 7 -----------
+
+function verifFim(word,end) {
+  let arrayWord = word.split('');
+  let arrayEnd = end.split('');
+  let match = false;
+
+  if(arrayEnd.length < arrayWord.length) {
+    for (let x = 1; x <= arrayEnd.length; x += 1) {
+      if(arrayEnd[arrayEnd.length - x] === arrayWord[arrayWord.length - x]) {
+        match = true;
+      } else {
+        return false;
+      }
+    }
+    return match;
+  }
+  
+  return 'Valor inválido, o fim é maior que a palavras';
+}
+
+// console.log(verifFim('Trybe','be'));
+// console.log(verifFim('joaofernando','fernan'));
