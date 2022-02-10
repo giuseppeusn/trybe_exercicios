@@ -66,24 +66,24 @@
     irmaoPartida.setAttribute("id","irmaoPartida");
     partida.parentNode.appendChild(irmaoPartida);
 
-    // ---------- Exercicio 9 ----------
+    // ---------- Exercicio 10 ----------
 
     let filhoPartida = document.createElement('section');
     filhoPartida.setAttribute("id","filhoPartida");
     partida.appendChild(filhoPartida);
 
-    // ---------- Exercicio 9 ----------
+    // ---------- Exercicio 11 ----------
 
     let filhoFilhoDoFilho = document.createElement('section');
     filhoFilhoDoFilho.setAttribute("id","filhoFilhoDoFilho");
     filhoDoFilho.appendChild(filhoFilhoDoFilho);
 
-    // ---------- Exercicio 10 ----------
+    // ---------- Exercicio 12 ----------
 
     let terceiroFilho3 = filhoFilhoDoFilho.parentNode.parentNode.nextElementSibling;
     console.log(terceiroFilho3);
 
-    // ---------- Exercicio 11 ----------
+    // ---------- Exercicio 13 ----------
 
     pai.removeChild(primeiroFilho);
     let segundoFilho = filhoDoFilho.nextElementSibling;
