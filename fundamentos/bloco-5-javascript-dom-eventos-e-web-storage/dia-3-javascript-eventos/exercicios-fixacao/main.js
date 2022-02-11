@@ -13,9 +13,10 @@ const myWebpage = document.getElementById('my-spotrybefy');
 
 let li = document.querySelectorAll('li');
 
-for (x in li) {
-  li[x].addEventListener('click',addClass);
-}
+
+li[0].addEventListener('click',addClass);
+li[1].addEventListener('click',addClass);
+li[2].addEventListener('click',addClass);
 
 function addClass(who) {
   for (x in li) {
@@ -27,8 +28,18 @@ function addClass(who) {
 }
 
 // --------- Exercicio 3 ---------
+
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
+
+let ipt = document.getElementById('input');
+
+ipt.addEventListener('change',inserTxt);
+
+function inserTxt(event) {
+  let tech = document.querySelectorAll('.tech');
+  tech[0].innerText = event.target.value;
+}
 
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
