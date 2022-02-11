@@ -29,6 +29,27 @@ function convertNumRomano(string) {
   return sum;
 }
 
-console.log(convertNumRomano('xix'));
+// console.log(convertNumRomano('xix'));
 
 // ----------- Exercicio 2 -----------
+
+function arrayOfNumbers(vector) {
+  
+  let newArray = [];
+
+  for (x in vector) {
+    for (y in vector[x]) {
+      newArray.push(vector[x][y]);
+    } 
+  }
+  
+  for (z in newArray) {
+    if (newArray[z] % 2 === 1) {
+      newArray.splice(z,1);
+    }
+  }
+
+  return newArray
+}
+
+console.log(arrayOfNumbers([[1, 2], [3,4,5,6], [7,8,9,10]]));
