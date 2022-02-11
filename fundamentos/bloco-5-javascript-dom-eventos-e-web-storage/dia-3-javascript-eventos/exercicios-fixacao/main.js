@@ -52,17 +52,3 @@ function redirect(event) {
 }
 
 // --------- Exercicio 5 ---------
-
-// 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
-// a cor do mesmo;
-
-text.addEventListener('mouseover',changeColorGreen);
-text.addEventListener('mouseout',changeColorDefault);
-
-function changeColorGreen(event) {
-  event.target.style.color = 'rgb(47, 193, 140)';
-}
-
-function changeColorDefault(event) {
-  event.target.style.color = 'white';
-}
