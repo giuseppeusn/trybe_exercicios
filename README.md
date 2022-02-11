@@ -8,18 +8,18 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Fundamentos do Desenvolvimento Web<!-- :white_check_mark: --> :hourglass_flowing_sand:
 
-##### Bloco 1: Introdução - Unix & Shell
+##### [Bloco 1:](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/bloco-1-unix-e-bash) Introdução - Unix & Shell
 
 - [x] 1-3: _Unix & Shell- Part 1_
 - [x] 1-4: _Unix & Shell- Part 2_
 
-##### Bloco 2: Git & GitHub
+##### [Bloco 2:](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/bloco-2-git-github-e-internet) Git & GitHub
 
 - [x] 2-1: _O que é e para que serve?_
 - [x] 2-2: _Entendendo os comandos_
 - [x] 2-3: _Internet - Entendendo como ela funciona_
 
-##### Bloco 3: Introdução - HTML & CSS
+##### [Bloco 3:](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/bloco-3-introducao-a-html-e-css) Introdução - HTML & CSS
 
 - [x] 3-1: _HTML & CSS - Estruturas de página_
 - [x] 3-2: _HTML & CSS - Primeiros passos em CSS_
@@ -27,7 +27,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 3-4: _HTML Semântico_
 - [x] 3-5: _[Projeto - HTML & CSS](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/html-e-css-lessons-learned)_
 
-##### Bloco 4: Introdução - JavaScript 
+##### [Bloco 4:](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/bloco-4-introducao-a-javascript-e-logica-de-programacao) Introdução - JavaScript 
 
 - [x] 4-1: _JavaScript - Primeiros passos_
 - [x] 4-2: _JavaScript - Array e loop For_
@@ -35,17 +35,17 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 4-4: _JavaScript - Objetos e funções_
 - [x] 4-5: _[Projeto - Playground Functions](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/javascript-playground-functions)_
 
-##### Bloco 5: Introdução - JavaScript - Projetos
+##### [Bloco 5:](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/bloco-5-javascript-dom-eventos-e-web-storage) Introdução - JavaScript - Projetos
 
 - [x] 5-1: _JavaScript - DOM e seletores_
 - [x] 5-2: _JavaScript - Trabalhando com elementos_
 - [x] 5-3: _JavaScript - Eventos_
 - [ ] 5-4: _JavaScript - Web Storage_
-- [ ] 5-5: _[Projeto - Meme Generator]()_
-- [ ] 5-6: _[Projeto - Arte com Pixels]()_
-- [ ] 5-7: _[Projeto - Lista de tarefas]()_
-- [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
-- [ ] 5-7: _[Projeto - Carta Misteriosa]()_
+- [ ] 5-5: _[Projeto - Arte com Pixels]()_
+- [ ] 5-6: _[Projeto - Lista de tarefas]()_
+- [ ] 5-7: _[(Bônus) Projeto - Meme Generator]()_
+- [ ] 5-7: _[(Bônus) Projeto - Adivinhe a Cor]()_
+- [ ] 5-7: _[(Bônus) Projeto - Carta Misteriosa]()_
 
 ##### Bloco 6: HTML & CSS avançado
 
