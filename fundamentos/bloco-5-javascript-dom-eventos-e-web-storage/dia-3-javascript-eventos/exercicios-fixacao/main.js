@@ -39,6 +39,7 @@ ipt.addEventListener('change',inserTxt);
 function inserTxt(event) {
   let tech = document.querySelectorAll('.tech');
   tech[0].innerText = event.target.value;
+  event.target.value = null;
 }
 
 // --------- Exercicio 4 ---------
