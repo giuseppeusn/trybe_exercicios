@@ -2,12 +2,7 @@
 
 function convertNumRomano(string) {
   string = string.toUpperCase();
-  let arrayNum = string.split('');
-  let array = [0];
-  let checkNum = [];
-  let num = '';
-  let result = 0;
-  let sum = 0;
+  let len = string.length;
   let algarismos = {
     I: 1,
     V: 5,
@@ -17,58 +12,23 @@ function convertNumRomano(string) {
     D: 500,
     M: 1000
   };
+  let sum = algarismos[string[len - 1]];
+  let value = algarismos[string[len - 1]];
 
-  for (x in arrayNum) {
-    for (y in algarismos) {
-      if (arrayNum[x] === y) {
-        checkNum.push(algarismos[y]);
-        break;
-      }
-    } 
-  }
 
-  // num = '10,100'
-
-  // let checkNum = num.split(',');
-
-  for (x in checkNum){
-    if (checkNum[x] > array[array.length - 1]) {
-      array[x] = checkNum[x];
-      maior = x;
-    }
-  }
-
-  let value = checkNum[maior];
-  checkNum[maior] = 0;
-
-  if(maior == checkNum.length - 1){
-    for (let x in checkNum) {
-      sum += parseInt(checkNum[x]);
-    }
-  
-    if (checkNum.length - 1 == maior) {     
-      result = value - sum;      
+  for (let x = 2; x <= len; x += 1) {
+    let prox = algarismos[string[len - x]];
+    if (value <= prox) {
+      sum += prox;
     } else {
-      result = value + sum;
+      sum -= prox;
     }
-  } else {
-    if (maior < checkNum.length) {
-      for (let x = parseInt(maior); x < checkNum.length; x += 1) {
-        sum += parseInt(checkNum[x]);
-      }
-
-      result += value + sum;
-    } 
-    sum = 0;
-    if (maior > 0){
-      for (let x = maior - 1; x >= 0; x -= 1) {
-        sum += parseInt(checkNum[x]);
-      }
-      result = result - sum;
-    }
+    value = prox;
   }
 
-  return result;
+  return sum;
 }
 
-console.log(convertNumRomano('xcix'));
+console.log(convertNumRomano('xix'));
+
+// ----------- Exercicio 2 -----------
