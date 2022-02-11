@@ -12,3 +12,6 @@ Neste bloco aprendemos a escrever códigos em JavaScript e a como desenvolver pe
   * _[Exercícios desenvolvidos](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/bloco-4-introducao-a-javascript-e-logica-de-programacao/dia-3-javascript-logica-de-programacao-e-algoritimos)_
 * Objetos e funções
   * _[Exercícios desenvolvidos](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/bloco-4-introducao-a-javascript-e-logica-de-programacao/dia-4-javascript-objetos-e-funcoes)_
+
+## Projeto desenvolvido
+* [Playground Functions](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/javascript-playground-functions)
