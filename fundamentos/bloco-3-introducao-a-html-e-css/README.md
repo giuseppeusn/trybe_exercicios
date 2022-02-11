@@ -12,3 +12,6 @@ Neste bloco aprendemos como estruturar páginas HTML estilizadas com o CSS de um
   * _[Exercícios desenvolvidos](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/bloco-3-introducao-a-html-e-css/dia-3-html-css-seletores-e-posicionamento)_
 * HTML Semântico
   * _[Exercícios desenvolvidos](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/bloco-3-introducao-a-html-e-css/dia-4-html-css-semantico)_
+
+# Projeto desenvolvido
+* [Lessons Learned - HTML & CSS](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/html-e-css-lessons-learned)
