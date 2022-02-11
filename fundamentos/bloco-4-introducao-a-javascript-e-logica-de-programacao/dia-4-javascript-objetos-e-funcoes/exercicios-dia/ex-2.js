@@ -7,14 +7,13 @@ function palindromo (word) {
   newWord.reverse();
 
   if(arrayWord === newWord.join('')){
-    console.log(true);
-  } else {
-    console.log(false);
+    return true;
   }
 
+  return false;
 } 
 
-// palindromo('arara');
+// console.log(palindromo('arara'));
 
 // ----------- Exercicio 2 -----------
 
@@ -28,10 +27,10 @@ function maiorValor (arrayNum) {
       maior = x;
     }
   }
-  console.log(maior);
+  return maior
 }
 
-// maiorValor([2, 3, 6, 7, 10, 1]);
+// console.log(maiorValor([2, 3, 6, 7, 10, 1]));
 
 // ----------- Exercicio 3 -----------
 
@@ -45,10 +44,10 @@ function menorValor (arrayNum) {
       menor = x;
     }
   }
-  console.log(menor);
+  return menor;
 }
 
-// menorValor([2, 4, 6, 7, 10, 0, -3]);
+// console.log(menorValor([2, 4, 6, 7, 10, 0, -3]));
 
 // ----------- Exercicio 4 -----------
 
@@ -64,13 +63,64 @@ function contCaract(arrayWords) {
       maior = word.join('');
     }
   }
-  console.log(maior);
+  return maior;
 }
 
-// contCaract(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']);
+// console.log(contCaract(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
 
 // ----------- Exercicio 5 -----------
 
 function contNum(arrayNum) {
-  
+  let maior = 0;
+  let cont = {};
+
+  arrayNum.forEach(function(x) { cont[x] = (cont[x] || 0)+1; });
+
+  for (x in cont) {
+    if(cont[x] > maior) {
+      maior = x;
+    } 
+  }
+
+  return maior;
 }
+
+// console.log(contNum([2, 3, 2, 5, 8, 2, 3]));
+
+// ----------- Exercicio 6 -----------
+
+function sumNum(num) {
+  let sum = 0;
+
+  for (let x = 1; x <= num; x += 1) {
+    sum += x;
+  }
+
+  return sum;
+}
+
+// console.log(sumNum(5));
+
+// ----------- Exercicio 7 -----------
+
+function verifFim(word,end) {
+  let arrayWord = word.split('');
+  let arrayEnd = end.split('');
+  let match = false;
+
+  if(arrayEnd.length < arrayWord.length) {
+    for (let x = 1; x <= arrayEnd.length; x += 1) {
+      if(arrayEnd[arrayEnd.length - x] === arrayWord[arrayWord.length - x]) {
+        match = true;
+      } else {
+        return false;
+      }
+    }
+    return match;
+  }
+  
+  return 'Valor inválido, o fim é maior que a palavras';
+}
+
+// console.log(verifFim('Trybe','be'));
+// console.log(verifFim('joaofernando','fernan'));
