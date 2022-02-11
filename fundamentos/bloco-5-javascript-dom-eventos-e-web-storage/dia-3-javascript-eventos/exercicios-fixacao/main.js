@@ -11,7 +11,20 @@ const myWebpage = document.getElementById('my-spotrybefy');
 
 // --------- Exercicio 2 ---------
 
+let li = document.querySelectorAll('li');
 
+for (x in li) {
+  li[x].addEventListener('click',addClass);
+}
+
+function addClass(who) {
+  for (x in li) {
+    if (li[x].className === 'tech') {
+      li[x].classList.remove('tech');
+    }
+  }
+  who.target.className = 'tech';
+}
 
 // --------- Exercicio 3 ---------
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
