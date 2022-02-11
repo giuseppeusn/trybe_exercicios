@@ -131,6 +131,18 @@ let moradores = {
 
 let msg = 'O morador do bloco 2 de nome ' + moradores.blocoDois[1].nome + ' ' + moradores.blocoDois[1].sobrenome + ' mora no ' + moradores.blocoDois[1].andar + 'º andar, apartamento ' + moradores.blocoDois[1].apartamento;
 
-console.log(msg);
+// console.log(msg);
 
 // ----------- Exercicio 5 -----------
+
+function residentsName() {
+
+  for (x in moradores) {
+    for (y in moradores[x]) {
+      console.log(moradores[x][y].nome + ' ' + moradores[x][y].sobrenome);
+    }
+  }
+  
+}
+
+residentsName();
