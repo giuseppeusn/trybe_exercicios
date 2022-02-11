@@ -52,3 +52,14 @@ function redirect(event) {
 }
 
 // --------- Exercicio 5 ---------
+
+text.addEventListener('mouseover',changeColorGreen);
+text.addEventListener('mouseout',changeColorDefault);
+
+function changeColorGreen(event) {
+  event.target.style.color = 'rgb(47, 193, 140)';
+}
+
+function changeColorDefault(event) {
+  event.target.style.color = 'white';
+}
