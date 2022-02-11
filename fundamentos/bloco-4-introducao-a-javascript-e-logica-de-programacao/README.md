@@ -1,6 +1,6 @@
 # Bloco 4 - Introdução à JavaScript e Lógica de Programação
 
-Neste bloco aprendemos a escrever códigos em JavaScript e a como desenvolver pequenos programas utilizando lógica de programação.
+Neste bloco aprendemos a escrever códigos em <b>JavaScript</b> e a como desenvolver pequenos programas utilizando <b>lógica de programação</b>.
 
 ## Conhecimentos adquiridos
 
