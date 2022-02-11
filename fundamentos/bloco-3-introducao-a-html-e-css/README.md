@@ -1,6 +1,6 @@
 # Bloco 3 - Introdução à HTML & CSS
 
-Neste bloco aprendemos como estruturar páginas HTML estilizadas com o CSS de uma forma muito prática e criando vários projetos.
+Neste bloco aprendemos como estruturar páginas <b>HTML</b> estilizadas com o <b>CSS</b> de uma forma muito prática.
 
 ## Conhecimentos adquiridos
 
