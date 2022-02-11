@@ -1,4 +1,4 @@
-# Bloco 05 - JavaScript: DOM, Eventos e Web Storage
+# Bloco 5 - JavaScript: DOM, Eventos e Web Storage
 
 Neste bloco aprendemos a utilizar o <b>DOM</b> com <b>eventos</b> e integrar HTML com JavaScript e manipular dados de _browsers_ com <b>Web Storage</b>.
 
