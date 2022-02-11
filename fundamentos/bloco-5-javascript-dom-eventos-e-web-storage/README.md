@@ -15,5 +15,5 @@ Neste bloco aprendemos a utilizar o <b>DOM</b> com <b>eventos</b> e integrar HTM
   
  ## Projetos desenvolvidos
  
- * [Arte com Pixels]()
- * [Lista de tarefas]()
+ * [Arte com Pixels - JavaScript, HTML & CSS]()
+ * [Lista de tarefas - JavaScript, HTML & CSS]()
