@@ -108,10 +108,10 @@ function changeFriday() {
 let day = document.querySelectorAll('.day');
 let stats = true;
 
-  for (let x = 1; x < day.length; x += 1) {
-    day[x].addEventListener('mouseover',hoverDay);
-    day[x].addEventListener('mouseout',hoverDay);
-  }
+for (let x = 1; x < day.length; x += 1) {
+  day[x].addEventListener('mouseover',hoverDay);
+  day[x].addEventListener('mouseout',hoverDay);
+}
 
 function hoverDay(event) {
   let size = event.target.style.fontSize;
@@ -133,12 +133,12 @@ btnAdd.addEventListener('click',addTasks);
 
 function addTasks() {
   let input = document.querySelector('#task-input');
-  
   let task = document.createElement('span');
   
   myTasks.appendChild(task);
-  task.innerText = ' ' + input.value;
+  task.innerText = input.value;
   
+  taskColor('green');
 }
 
 // --------- Exercicio 8 --------- 
@@ -148,6 +148,12 @@ function taskColor(color) {
   newDiv.className = 'task';
   myTasks.appendChild(newDiv);
   newDiv.style.backgroundColor = color;
+
+  newDiv.addEventListener('click',selectedTask);
 }
 
-taskColor('black');
+// --------- Exercicio 9 --------- 
+
+function selectedTask(event) {
+  event.target.classList.add('selected');
+}
