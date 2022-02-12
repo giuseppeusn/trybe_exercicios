@@ -101,3 +101,25 @@ function changeFriday() {
     }
   }
 }
+
+
+// --------- Exercicio 6 --------- 
+
+let day = document.querySelectorAll('.day');
+let stats = true;
+
+  for (x in day) {
+    day[x].addEventListener('mouseover',hoverDay);
+    day[x].addEventListener('mouseout',hoverDay);
+  }
+
+function hoverDay(event) {
+  let size = event.target.style.fontSize;
+  if (stats) {
+    event.target.style.fontSize = '180%';
+    stats = false;
+  } else {
+    event.target.style.fontSize = '125%';
+    stats = true;
+  }
+}
