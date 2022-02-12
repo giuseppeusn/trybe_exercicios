@@ -126,6 +126,8 @@ function hoverDay(event) {
 
 // --------- Exercicio 7 --------- 
 
+let myTasks = document.querySelector('.my-tasks')
+
 let btnAdd = document.querySelector('#btn-add');
 btnAdd.addEventListener('click',addTasks);
 
@@ -133,8 +135,19 @@ function addTasks() {
   let input = document.querySelector('#task-input');
   
   let task = document.createElement('span');
-  let div = document.querySelector('.my-tasks')
-  div.appendChild(task);
+  
+  myTasks.appendChild(task);
   task.innerText = ' ' + input.value;
   
 }
+
+// --------- Exercicio 8 --------- 
+
+function taskColor(color) {
+  let newDiv = document.createElement('div');
+  newDiv.className = 'task';
+  myTasks.appendChild(newDiv);
+  newDiv.style.backgroundColor = color;
+}
+
+taskColor('black');
