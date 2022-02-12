@@ -42,15 +42,15 @@ createDays();
 // --------- Exercicio 2 ---------
 
 let btnHoliday = document.createElement('button');
+let btnContainer = document.querySelector('.buttons-container');
 
-function createSextou(string) {
+function createHoliday(string) {
   btnHoliday.innerText = string;
-  let btnContainer = document.querySelector('.buttons-container');
   btnHoliday.setAttribute('id','btn-holiday');
   btnContainer.appendChild(btnHoliday);
 }
 
-createSextou('Feriados');
+createHoliday('Feriados');
 
 
 // --------- Exercicio 3 ---------
@@ -67,3 +67,16 @@ function changeHolidays(event) {
     }
   }
 }
+
+
+// --------- Exercicio 4 ---------
+
+let btnSextou = document.createElement('button');
+
+function createSextou(string) {
+  btnSextou.innerText = string;
+  btnSextou.setAttribute('id','btn-friday');
+  btnContainer.appendChild(btnSextou);
+}
+
+createSextou('Sexta-feira');
