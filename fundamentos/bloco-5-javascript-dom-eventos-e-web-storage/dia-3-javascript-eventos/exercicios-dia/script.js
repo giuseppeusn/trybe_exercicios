@@ -135,13 +135,17 @@ btnAdd.addEventListener('click',addTasks);
 function addTasks() {
   let input = document.querySelector('#task-input');
   let task = document.createElement('span');
-  
-  myTasks.appendChild(task);
-  task.innerText = ' ' + input.value;
 
-  let color = Math.floor(Math.random()*16777215).toString(16);
-  
-  taskColor(color);
+  if(input.value === '') {
+    alert('Erro! Preencha o campo');
+  } else {
+    myTasks.appendChild(task);
+    task.innerText = ' ' + input.value;
+
+    let color = Math.floor(Math.random()*16777215).toString(16);
+    
+    taskColor(color);
+  }  
 }
 
 // --------- Exercicio 8 --------- 
