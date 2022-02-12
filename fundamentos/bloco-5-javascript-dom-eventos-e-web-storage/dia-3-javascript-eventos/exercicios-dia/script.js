@@ -111,6 +111,7 @@ let stats = true;
 for (let x = 1; x < day.length; x += 1) {
   day[x].addEventListener('mouseover',hoverDay);
   day[x].addEventListener('mouseout',hoverDay);
+  day[x].addEventListener('click',addEvent);
 }
 
 function hoverDay(event) {
@@ -136,9 +137,11 @@ function addTasks() {
   let task = document.createElement('span');
   
   myTasks.appendChild(task);
-  task.innerText = input.value;
+  task.innerText = ' ' + input.value;
+
+  let color = Math.floor(Math.random()*16777215).toString(16);
   
-  taskColor('green');
+  taskColor(color);
 }
 
 // --------- Exercicio 8 --------- 
@@ -147,7 +150,7 @@ function taskColor(color) {
   let newDiv = document.createElement('div');
   newDiv.className = 'task';
   myTasks.appendChild(newDiv);
-  newDiv.style.backgroundColor = color;
+  newDiv.style.backgroundColor = '#' + color;
 
   newDiv.addEventListener('click',selectedTask);
 }
@@ -156,4 +159,21 @@ function taskColor(color) {
 
 function selectedTask(event) {
   event.target.classList.add('selected');
+}
+
+// --------- Exercicio 10 --------- 
+
+function addEvent(event) {
+  let color = document.querySelector('.selected').style.backgroundColor;
+
+  let list = event.target.classList;
+  let length = list.length;
+
+  if(list[length - 1] === 'colored') {
+    event.target.style.color = 'rgb(119,119,119)';
+    list.remove('colored');
+  } else {
+    event.target.style.color = color ;
+    list.add('colored');
+  }
 }
