@@ -41,8 +41,9 @@ createDays();
 
 // --------- Exercicio 2 ---------
 
+let btnHoliday = document.createElement('button');
+
 function createSextou(string) {
-  let btnHoliday = document.createElement('button');
   btnHoliday.innerText = string;
   let btnContainer = document.querySelector('.buttons-container');
   btnHoliday.setAttribute('id','btn-holiday');
@@ -54,3 +55,15 @@ createSextou('Feriados');
 
 // --------- Exercicio 3 ---------
 
+btnHoliday.addEventListener('click',changeHolidays);
+
+function changeHolidays(event) {
+  let day = document.querySelectorAll('.holiday');
+  for (x in day) {
+    if (day[x].style.backgroundColor == 'red') {
+      day[x].style.backgroundColor = 'rgb(238,238,238)';
+    } else {
+      day[x].style.backgroundColor = 'red';
+    }
+  }
+}
