@@ -158,7 +158,12 @@ function taskColor(color) {
 // --------- Exercicio 9 --------- 
 
 function selectedTask(event) {
-  event.target.classList.add('selected');
+  let selected = document.querySelector('.selected');
+  if(selected === null) {
+    event.target.classList.add('selected');
+  } else {
+    event.target.classList.remove('selected');
+  }
 }
 
 // --------- Exercicio 10 --------- 

@@ -93,6 +93,11 @@ label {
   width: 45px;
 }
 
+.selected {
+  height: 45px !important;
+  width: 45px !important;
+}
+
 .my-tasks span {
   color: #666;
   font-size: 18px;
