@@ -108,7 +108,7 @@ function changeFriday() {
 let day = document.querySelectorAll('.day');
 let stats = true;
 
-  for (x in day) {
+  for (let x = 1; x < day.length; x += 1) {
     day[x].addEventListener('mouseover',hoverDay);
     day[x].addEventListener('mouseout',hoverDay);
   }
@@ -122,4 +122,19 @@ function hoverDay(event) {
     event.target.style.fontSize = '125%';
     stats = true;
   }
+}
+
+// --------- Exercicio 7 --------- 
+
+let btnAdd = document.querySelector('#btn-add');
+btnAdd.addEventListener('click',addTasks);
+
+function addTasks() {
+  let input = document.querySelector('#task-input');
+  
+  let task = document.createElement('span');
+  let div = document.querySelector('.my-tasks')
+  div.appendChild(task);
+  task.innerText = ' ' + input.value;
+  
 }
