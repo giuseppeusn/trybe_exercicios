@@ -80,3 +80,24 @@ function createSextou(string) {
 }
 
 createSextou('Sexta-feira');
+
+
+// --------- Exercicio 5 ---------
+
+btnSextou.addEventListener('click',changeFriday);
+let friday = document.querySelectorAll('.friday');
+let backupNum = [];
+
+for (x in friday) {
+  backupNum.push(friday[x].innerText);
+}
+
+function changeFriday() {
+  for (x in friday) {   
+    if (friday[x].innerText != 'Sextou!') {
+      friday[x].innerText = 'Sextou!'
+    } else {
+      friday[x].innerText = backupNum[x];
+    }
+  }
+}
