@@ -41,11 +41,16 @@ createDays();
 
 // --------- Exercicio 2 ---------
 
-function createSextou() {
+function createSextou(string) {
   let btnHoliday = document.createElement('button');
+  btnHoliday.innerText = string;
   let btnContainer = document.querySelector('.buttons-container');
   btnHoliday.setAttribute('id','btn-holiday');
   btnContainer.appendChild(btnHoliday);
 }
 
-createSextou();
+createSextou('Feriados');
+
+
+// --------- Exercicio 3 ---------
+
