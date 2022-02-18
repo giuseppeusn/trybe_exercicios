@@ -8,15 +8,16 @@
 </head>
 <body>
   <main>
-    <label for="user">Email <input type="text" required name="user" placeholder="Digite seu email" autocomplete="off" autofocus></label>
-    <br>
-    <br>
-    <label for="pass">Senha <input type="password" required name="pass" placeholder="Digite sua senha"></label>
-    <br>
-    <br>
-    <label for="remember"><input type="checkbox" name="remember" id="">Lembre-me</label>
-    <button type="submit">Entrar</button>
+    <form action="get">
+      <label for="input-user">Email <input type="email" name="user" placeholder="Digite seu email" autocomplete="off" id="input-user" autofocus required></label>
+      <br>
+      <br>
+      <label for="input-pass">Senha <input type="password" name="pass" id="input-pass" placeholder="Digite sua senha" required></label>
+      <br>
+      <br>
+      <label for="remember"><input type="checkbox" name="remember" id="remember">Lembre-me</label>
+      <button type="submit">Entrar</button>
+      </form> 
   </main>
-  
 </body>
 </html>
