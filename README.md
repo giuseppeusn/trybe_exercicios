@@ -47,7 +47,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-7: _[(Bônus) Projeto - Adivinhe a Cor](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/javascript-adivinhe-a-cor)_
 - [x] 5-7: _[(Bônus) Projeto - Carta Misteriosa](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/javascript-carta-misteriosa)_
 
-##### Bloco 6: HTML & CSS avançado
+##### [Bloco 6:](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/bloco-6-html-e-css-forms-flexbox-e-reponsivo) HTML & CSS avançado
 
 - [x] 6-1: _HTML & CSS - Forms_
 - [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
