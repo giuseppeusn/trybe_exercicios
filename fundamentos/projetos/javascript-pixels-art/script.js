@@ -1,92 +1,100 @@
-const colorDivs   = document.getElementById('color-palette').children;
-const btnClear    = document.getElementById('clear-board');
+const colorDivs = document.getElementById('color-palette').children;
+const btnClear = document.getElementById('clear-board');
 const btnGenBoard = document.getElementById('generate-board');
-const input       = document.getElementById('board-size');
-let   pixels      = document.querySelectorAll('.pixel');
+const input = document.getElementById('board-size');
+let pixels = document.querySelectorAll('.pixel');
 let color = 'rgb(0,0,0)';
 
-for (let x in pixels) {
-  pixels[x].onclick = changeColor;
-}
-
-for (let x in colorDivs) {
-  colorDivs[x].onclick = selectColor;
-}
-
-btnClear.onclick    = clearBoard;
-btnGenBoard.onclick = genBoard;
-
 function selectColor(event) {
-  let div = event.target;
+  const div = event.target;
   const cssObj = window.getComputedStyle(div, null);
   color = cssObj.getPropertyValue('background-color');
-  
 
-  if (div.classList[div.classList.length - 1] != 'selected') {
+  if (div.classList[div.classList.length - 1] !== 'selected') {
     for (let x = 0; x < colorDivs.length; x += 1) {
       colorDivs[x].classList.remove('selected');
     }
-    div.classList.add("selected");
-  }   
+    div.classList.add('selected');
+  }
 }
 
 function changeColor(event) {
-  event.target.style.backgroundColor = color;
+  const elem = event.target;
+
+  elem.style.backgroundColor = color;
 }
 
-function clearBoard(event) {
+for (let x = 0; x < pixels.length; x += 1) {
+  pixels[x].onclick = changeColor;
+}
+
+for (let x = 0; x < colorDivs.length; x += 1) {
+  colorDivs[x].onclick = selectColor;
+}
+
+function clearBoard() {
   for (let x = 0; x < pixels.length; x += 1) {
     pixels[x].style.backgroundColor = 'white';
   }
 }
 
-function genBoard(event) {
-  let value = input.value;
-  if (value === '') {
-    alert('Board inválido!');
-    return null
+btnClear.onclick = clearBoard;
+
+function verifValue(value) {
+  let x = value;
+
+  if (x < 5) {
+    x = 5;
+  } else if (x > 50) {
+    x = 50;
   }
 
-  let board = document.getElementById('pixel-board');
-  board.innerHTML = '';
-
-  genLines(value,board);
-
-  pixels = document.querySelectorAll('.pixel');
-
-  for (let x in pixels) {
-    pixels[x].onclick = changeColor;
-  }
+  return x;
 }
 
-function genLines(value,dad){
+function genLines(value, dad) {
+  const newValue = verifValue(value);
 
-  if (value < 5) {
-    value = 5;
-  } else if (value > 50) {
-    value = 50;
-  }
-
-  for (let x = 0; x < value; x += 1) {
-    let line = document.createElement('div');
+  for (let x = 0; x < newValue; x += 1) {
+    const line = document.createElement('div');
     line.className = 'line';
     dad.appendChild(line);
 
-    for (let y = 0; y < value; y += 1) {
-      let pixel = document.createElement('div');
+    for (let y = 0; y < newValue; y += 1) {
+      const pixel = document.createElement('div');
       pixel.className = 'pixel';
-      let lines = document.querySelectorAll('.line');
+      const lines = document.querySelectorAll('.line');
       lines[x].appendChild(pixel);
     }
   }
 }
 
-window.onload = function () {
+function genBoard() {
+  const { value } = input;
+  if (value === '') {
+    alert('Board inválido!');
+    return null;
+  }
 
-  let colors = document.querySelectorAll('.color');
-  for (let x = 1; x < colors.length; x += 1) {
-    // * Source: https://css-tricks.com/snippets/javascript/random-hex-color/
-    var randomColor = Math.floor(Math.random()*16777215).toString(16);
-    colors[x].style.backgroundColor = '#' + randomColor;
+  const board = document.getElementById('pixel-board');
+  board.innerHTML = '';
+
+  genLines(value, board);
+
+  pixels = document.querySelectorAll('.pixel');
+
+  for (let x = 0; x < pixels.length; x += 1) {
+    pixels[x].onclick = changeColor;
   }
 }
+
+btnGenBoard.onclick = genBoard;
+
+window.onload = () => {
+  const colors = document.querySelectorAll('.color');
+  for (let x = 1; x < colors.length; x += 1) {
+    // * Source: https://css-tricks.com/snippets/javascript/random-hex-color/
+    const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+    colors[x].style.backgroundColor = `#${randomColor}`;
+  }
+};
