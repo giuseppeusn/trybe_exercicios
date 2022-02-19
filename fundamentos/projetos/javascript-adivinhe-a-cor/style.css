@@ -1,0 +1,32 @@
+body {
+  background-color: rgb(64, 64, 64);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+#title {
+  text-align: center;
+}
+
+main {
+  text-align: center;
+}
+
+.ball {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+#reset-game {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-weight: 800;
+  box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+  background-color: rgb(1, 144, 73);
+  color: white;
+}
+
