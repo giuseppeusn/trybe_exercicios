@@ -1,128 +1,128 @@
-const input    = document.getElementById('texto-tarefa');
-const btnAdd   = document.getElementById('criar-tarefa');
+const input = document.getElementById('texto-tarefa');
+const btnAdd = document.getElementById('criar-tarefa');
 const btnRmAll = document.getElementById('apaga-tudo');
 const btnRmFin = document.getElementById('remover-finalizados');
-const btnSalv  = document.getElementById('salvar-tarefas');
-const btnCima  = document.getElementById('mover-cima');
+const btnSalv = document.getElementById('salvar-tarefas');
+const btnCima = document.getElementById('mover-cima');
 const btnBaixo = document.getElementById('mover-baixo');
-const btnRm    = document.getElementById('remover-selecionado');
-const list     = document.getElementById('lista-tarefas');
+const btnRm = document.getElementById('remover-selecionado');
+const list = document.getElementById('lista-tarefas');
 
-btnAdd.onclick = function (){
-  let txt    = input.value;
-  let tarefa = document.createElement('li');
+function changeBgColor(event) {
+  const elem = document.getElementsByClassName('selected')[0];
 
-  tarefa.innerText = txt;
+  if (elem !== undefined) {
+    for (let x = 0; x < elem.classList.length; x += 1) {
+      if (elem.classList[x] === 'selected') {
+        elem.classList.toggle('selected');
+      }
+    }
+  }
+
+  event.target.classList.toggle('selected');
+}
+
+function completeTask(event) {
+  const li = event.target;
+  const classL = li.classList;
+
+  classL.toggle('completed');
+}
+
+btnAdd.onclick = () => {
+  const tarefa = document.createElement('li');
+
+  tarefa.innerText = input.value;
   list.appendChild(tarefa);
   input.value = '';
 
-  tarefa.onclick    = changeBgColor;
+  tarefa.onclick = changeBgColor;
   tarefa.ondblclick = completeTask;
-}
+};
 
-btnRmAll.onclick = function () {
+btnRmAll.onclick = () => {
   list.innerHTML = '';
-}
+};
 
-btnRmFin.onclick = function () {
-  let elem = document.querySelectorAll('.completed');
+btnRmFin.onclick = () => {
+  const elem = document.querySelectorAll('.completed');
 
-  for (let x = 0; x < elem.length; x+=1) {
+  for (let x = 0; x < elem.length; x += 1) {
     elem[x].remove();
   }
-}
+};
 
-btnSalv.onclick = function () {
-  let item = [];
+btnSalv.onclick = () => {
+  const item = [];
 
   for (let x = 0; x < list.children.length; x += 1) {
-   
     item.push(list.children[x].outerHTML);
   }
 
-  localStorage.setItem('list',JSON.stringify(item));
-}
+  localStorage.setItem('list', JSON.stringify(item));
+};
 
-btnCima.onclick = function () {
-  let elem = document.getElementsByClassName('selected')[0];
-  
+btnCima.onclick = () => {
+  const elem = document.getElementsByClassName('selected')[0];
+
   if (elem === undefined) {
-    return;
-  } else if (elem.previousElementSibling === null) {
     return;
   }
 
-  let elemC    = elem.classList;
-  let elemTxt  = elem.innerText;
-  let prevElem = elem.previousElementSibling;
-  let prevTxt  = prevElem.innerText;
+  if (elem.previousElementSibling === null) {
+    return;
+  }
 
-  prevElem.innerText  = elemTxt;
-  prevElem.className += elemC;
-  elem.innerText      = prevTxt;
+  const elemTxt = elem.innerText;
+  const prevElem = elem.previousElementSibling;
+  const prevTxt = prevElem.innerText;
+
+  prevElem.innerText = elemTxt;
+  prevElem.className += elem.classList;
+  elem.innerText = prevTxt;
   elem.classList.toggle('selected');
-}
+};
 
-btnBaixo.onclick = function () {
-  let elem = document.getElementsByClassName('selected')[0];
+btnBaixo.onclick = () => {
+  const elem = document.getElementsByClassName('selected')[0];
 
   if (elem === undefined) {
     return;
-  } else if (elem.nextElementSibling === null) {
+  }
+
+  if (elem.nextElementSibling === null) {
     return;
   }
 
-  let elemC    = elem.classList;
-  let elemTxt  = elem.innerText;
-  let nextElem = elem.nextElementSibling;
-  let nextTxt  = nextElem.innerText;
+  const elemTxt = elem.innerText;
+  const nextElem = elem.nextElementSibling;
+  const nextTxt = nextElem.innerText;
 
   nextElem.innerText = elemTxt;
-  nextElem.className += elemC;
+  nextElem.className += elem.classList;
   elem.innerText = nextTxt;
   elem.classList.toggle('selected');
-}
+};
 
-btnRm.onclick = function () {
-  let elem = document.getElementsByClassName('selected')[0];
+btnRm.onclick = () => {
+  const elem = document.getElementsByClassName('selected')[0];
 
   if (elem === undefined) {
     return;
   }
 
   elem.remove();
-}
+};
 
-function changeBgColor(event) {
-  let li = event.target;
+window.onload = () => {
+  const items = JSON.parse(localStorage.getItem('list'));
 
-  for (x in list.children) {
-    for (y in list.children[x].classList)
-    if (list.children[x].classList[y] == 'selected') {
-      list.children[x].classList.toggle('selected');
-    }
-  }  
-
-  li.classList.toggle('selected');
-}
-
-function completeTask(event) {
-  let li = event.target;
-  let classL = li.classList;
-
-  classL.toggle("completed");
-}
-
-window.onload = function () {
-  let items = JSON.parse(localStorage.getItem('list'));
-  
-  for (let x in items) {
+  for (const x in items) {
     list.innerHTML += items[x];
   }
 
-  for (let x in list.children) {
+  for (let x = 0; x < list.children.length; x += 1) {
     list.children[x].onclick = changeBgColor;
     list.children[x].ondblclick = completeTask;
   }
-
-}
+};
