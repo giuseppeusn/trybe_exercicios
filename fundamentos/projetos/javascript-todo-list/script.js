@@ -8,15 +8,19 @@ const btnBaixo = document.getElementById('mover-baixo');
 const btnRm = document.getElementById('remover-selecionado');
 const list = document.getElementById('lista-tarefas');
 
+function toogleClass(elem) {
+  for (let x = 0; x < elem.classList.length; x += 1) {
+    if (elem.classList[x] === 'selected') {
+      elem.classList.toggle('selected');
+    }
+  }
+}
+
 function changeBgColor(event) {
   const elem = document.getElementsByClassName('selected')[0];
 
   if (elem !== undefined) {
-    for (let x = 0; x < elem.classList.length; x += 1) {
-      if (elem.classList[x] === 'selected') {
-        elem.classList.toggle('selected');
-      }
-    }
+    toogleClass(elem);
   }
 
   event.target.classList.toggle('selected');
@@ -117,12 +121,14 @@ btnRm.onclick = () => {
 window.onload = () => {
   const items = JSON.parse(localStorage.getItem('list'));
 
-  for (const x in items) {
-    list.innerHTML += items[x];
-  }
+  if (items !== null) {
+    for (let i = 0; i < items.length; i += 1) {
+      list.innerHTML += items[i];
+    }
 
-  for (let x = 0; x < list.children.length; x += 1) {
-    list.children[x].onclick = changeBgColor;
-    list.children[x].ondblclick = completeTask;
+    for (let x = 0; x < list.children.length; x += 1) {
+      list.children[x].onclick = changeBgColor;
+      list.children[x].ondblclick = completeTask;
+    }
   }
 };
