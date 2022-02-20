@@ -15,5 +15,8 @@ Neste bloco aprendemos a utilizar o <b>DOM</b> com <b>eventos</b> e integrar HTM
   
  ## Projetos desenvolvidos
  
- * [Arte com Pixels - JavaScript, HTML & CSS]()
- * [Lista de tarefas - JavaScript, HTML & CSS]()
+ * [Arte com Pixels - JavaScript, HTML & CSS](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/javascript-pixels-art)
+ * [Lista de tarefas - JavaScript, HTML & CSS](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/javascript-todo-list)
+ * [(Bônus) Meme Generator - JavaScript, HTML & CSS](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/javascript-meme-generator)
+ * [(Bônus) Adivinhe a Cor - JavaScript, HTML & CSS](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/javascript-adivinhe-a-cor)
+ * [(Bônus) Carta Misteriosa - JavaScript, HTML & CSS](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/javascript-carta-misteriosa)

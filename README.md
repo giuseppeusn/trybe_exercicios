@@ -40,16 +40,16 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-1: _JavaScript - DOM e seletores_
 - [x] 5-2: _JavaScript - Trabalhando com elementos_
 - [x] 5-3: _JavaScript - Eventos_
-- [ ] 5-4: _JavaScript - Web Storage_
-- [ ] 5-5: _[Projeto - Arte com Pixels]()_
-- [ ] 5-6: _[Projeto - Lista de tarefas]()_
-- [ ] 5-7: _[(Bônus) Projeto - Meme Generator]()_
-- [ ] 5-7: _[(Bônus) Projeto - Adivinhe a Cor]()_
-- [ ] 5-7: _[(Bônus) Projeto - Carta Misteriosa]()_
+- [x] 5-4: _JavaScript - Web Storage_
+- [x] 5-5: _[Projeto - Arte com Pixels](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/javascript-pixels-art)_
+- [x] 5-6: _[Projeto - Lista de tarefas](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/javascript-todo-list)_
+- [x] 5-7: _[(Bônus) Projeto - Meme Generator](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/javascript-meme-generator)_
+- [x] 5-7: _[(Bônus) Projeto - Adivinhe a Cor](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/javascript-adivinhe-a-cor)_
+- [x] 5-7: _[(Bônus) Projeto - Carta Misteriosa](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/javascript-carta-misteriosa)_
 
-##### Bloco 6: HTML & CSS avançado
+##### [Bloco 6:](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/bloco-6-html-e-css-forms-flexbox-e-reponsivo) HTML & CSS avançado
 
-- [ ] 6-1: _HTML & CSS - Forms_
+- [x] 6-1: _HTML & CSS - Forms_
 - [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
 - [ ] 6-3: _CSS Flexbox - Part 1_
 - [ ] 6-4: _CSS Flexbox - Part 2_
