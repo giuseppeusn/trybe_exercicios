@@ -4,51 +4,59 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
   <title>TrybeTrip</title>
 </head>
 <body>
-  <main>
-      <fieldset>
-        <legend>TRYBETRIP</legend>
-        <form method="GET">
-          <label for="input-nome">Nome:
-            <input type="text" id="input-nome" minlength="10" maxlength="40" required>
+  <main>   
+      <h1>TrybeTrip</h1>
+      <form method="GET" class="container">
+        <label class="row" for="input-nome">Nome:
+          <input class="form-control" type="text" id="input-nome" minlength="10" maxlength="40" required>
+        </label>
+        <br>
+        <label class="row" for="input-email">Email:
+          <input class="form-control" type="email" id="input-email" minlength="10" maxlength="50" required>
+        </label>
+        <br>
+        <label class="row" for="input-fav-dest">Destino preferido:
+          <select class="form-select" name="fav-dest" id="fav-dest">
+            <option value="pr" id="fav-dest">Paraná</option>
+            <option value="sp" id="fav-dest">São Paulo</option>
+            <option value="rj" id="fav-dest">Rio de Janeiro</option>
+            <option value="mg" id="fav-dest">Minas Gerais</option>
+          </select>
+        </label>
+        <br>
+        <div class="row form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" style="height: 100px" id="input-desc"></textarea>
+          <label for="input-desc">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+        </div>
+        <br>
+        <label class="row" for="input-melhor-data">Qual a melhor data para realizar sua viagem?
+          <input class="form-control" type="date" name="melhor-data" id="melhor-data">
+        </label>
+        <br>
+        <div class="form-check">
+          <label class="form-check-label" for="check1">
+            <input class="form-check-input" type="checkbox" name="input-check1" id="check1" checked>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
           </label>
-          <br>
-          <label for="input-email">Email:
-            <input type="email" id="input-email" minlength="10" maxlength="50" required>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="check2">
+            <input class="form-check-input" type="checkbox" name="input-check2" id="check2" checked>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
           </label>
-          <br>
-          <label for="input-fav-dest">Destino preferido:
-            <select name="fav-dest" id="fav-dest">
-              <option value="pr" id="fav-dest">Paraná</option>
-              <option value="sp" id="fav-dest">São Paulo</option>
-              <option value="rj" id="fav-dest">Rio de Janeiro</option>
-              <option value="mg" id="fav-dest">Minas Gerais</option>
-            </select>
-          </label>
-          <br>
-          <label for="input-desc">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
-            <textarea name="desc" id="desc" cols="25" rows="5" maxlength="500"></textarea>
-          </label>
-          <br>
-          <label for="input-melhor-data">Qual a melhor data para realizar sua viagem?
-            <input type="date" name="melhor-data" id="melhor-data">
-          </label>
-          <br>
-          <label for="check1">
-            <input type="checkbox" name="input-check1" id="check1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
-          </label>
-          <br>
-          <label for="check2">
-            <input type="checkbox" name="input-check2" id="check2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
-          </label>
-          <br>
-          <button id="limpar">Limpar</button>
-          <br>
-          <button type="submit" id="enviar">Enviar</button>
-        </form>
-      </fieldset>
+        </div>          
+        <br>
+        <div class="row position-relative">
+          <button type="submit" id="enviar" class="col col-lg-4 btn btn-success mx-auto">Enviar</button>
+          <button id="limpar" class="col col-lg-4 btn btn-warning mx-auto">Limpar</button>
+        </div>
+        <div>
+          <input type="text" class="data">
+        </div>
+      </form>
   </main>
   <script src="script.js"></script>
 </body>
