@@ -1,19 +1,3 @@
-const submit = document.getElementById('enviar');
-const clean = document.getElementById('limpar');
-const form = document.querySelector('form');
-
-
-function prevent(event) {
-  event.preventDefault();
-}
-
-function cleanForm(params) {
-  form.reset();
-}
-
-submit.onclick = prevent;
-clean.onclick = cleanForm;
-
 var $min = document.querySelector('.row [name="min"]'),
     $max = document.querySelector('.row [name="max"]');
 
@@ -23,6 +7,8 @@ $min.DatePickerX.init({
   minDate    : new Date(2021, 5, 9),
   singleMonthLabels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
   weekDayLabels: ['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
+  todayButtonLabel: 'Hoje',
+  clearButtonLabel: 'Limpar',
   maxDate    : $max
 });
 
@@ -32,6 +18,8 @@ $max.DatePickerX.init({
   minDate    : $min,
   singleMonthLabels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
   weekDayLabels: ['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
+  todayButtonLabel: 'Hoje',
+  clearButtonLabel: 'Limpar',
   maxDate    : function()
   {
       var date = new Date();
