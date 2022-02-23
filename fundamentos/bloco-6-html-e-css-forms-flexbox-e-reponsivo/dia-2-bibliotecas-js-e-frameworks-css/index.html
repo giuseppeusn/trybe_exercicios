@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>TrybeTrip</title>
+</head>
+<body>
+  <main>   
+      <h1>TrybeTrip</h1>
+      <form method="GET" class="container" id="form">
+        <label class="row" for="input-nome">Nome:
+          <input class="form-control" type="text" name="input-nome" id="input-nome">
+        </label>
+        <br>
+        <label class="row" for="input-email">Email:
+          <input class="form-control" type="email" id="input-email">
+        </label>
+        <br>
+        <label class="row" for="input-fav-dest">Destino preferido:
+          <select class="form-select" name="fav-dest" id="fav-dest">
+            <option value="pr" id="fav-dest">Paraná</option>
+            <option value="sp" id="fav-dest">São Paulo</option>
+            <option value="rj" id="fav-dest">Rio de Janeiro</option>
+            <option value="mg" id="fav-dest">Minas Gerais</option>
+          </select>
+        </label>
+        <br>
+        <div class="row form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" style="height: 100px" id="input-desc"></textarea>
+          <label for="input-desc">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+        </div>
+        <br>
+        <label class="row" for="input-melhor-data">Qual a melhor data para realizar sua viagem?
+          <input class="form-control" type="text" id="datepicker"  name="min" placeholder="Escolha a data de ida">
+          <input class="form-control" type="text" id="datepicker"  name="max" placeholder="Escolha a data de volta">
+        </label>
+        <br>
+        <div class="form-check">
+          <label class="form-check-label" for="check1">
+            <input class="form-check-input" type="checkbox" name="input-check1" id="check1" checked>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="check2">
+            <input class="form-check-input" type="checkbox" name="input-check2" id="check2" checked>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+          </label>
+        </div>          
+        <br>
+        <div class="row position-relative">
+          <button type="submit" id="enviar" class="col col-lg-4 btn btn-success mx-auto">Enviar</button>
+          <button id="limpar" class="col col-lg-4 btn btn-warning mx-auto">Limpar</button>
+        </div>
+      </form>
+  </main>
+  <script src="dist/js/DatePickerX.min.js"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
