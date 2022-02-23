@@ -12,13 +12,13 @@
 <body>
   <main>   
       <h1>TrybeTrip</h1>
-      <form method="GET" class="container">
+      <form method="GET" class="container" id="form">
         <label class="row" for="input-nome">Nome:
-          <input class="form-control" type="text" id="input-nome" minlength="10" maxlength="40" required>
+          <input class="form-control" type="text" name="input-nome" id="input-nome">
         </label>
         <br>
         <label class="row" for="input-email">Email:
-          <input class="form-control" type="email" id="input-email" minlength="10" maxlength="50" required>
+          <input class="form-control" type="email" id="input-email">
         </label>
         <br>
         <label class="row" for="input-fav-dest">Destino preferido:
@@ -58,6 +58,7 @@
       </form>
   </main>
   <script src="dist/js/DatePickerX.min.js"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

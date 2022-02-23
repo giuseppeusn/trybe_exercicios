@@ -1,3 +1,49 @@
+const validate = new window.JustValidate('#form');
+
+validate
+  .addField('#input-nome', [
+    {
+      rule: 'minLength',
+      value: 10,
+      errorMessage: 'Deve conter no mínimo 10 caracteres',
+    },
+    {
+      rule: 'maxLength',
+      value: 40,
+      errorMessage: 'Deve conter no máximo 40 caracteres',
+    },
+    {
+      rule: 'required',
+      errorMessage: 'Campo obrigatório!'
+    }
+  ])
+  .addField('#input-email', [
+    {
+      rule: 'required',
+      errorMessage: 'Campo obrigatório!',
+    },
+    {
+      rule: 'email',
+      errorMessage: 'Email inválido!',
+    },
+  ])
+  .addField('#input-desc', [
+    {
+      rule: 'required',
+      errorMessage: 'Campo obrigatório!',
+    }
+  ])
+  .addField('#datepicker', [
+    {
+      rule: 'required',
+      errorMessage: 'Campo obrigatório!',
+    }  
+  ])
+  .onSuccess((event) => {
+    console.log('Validation passes and form submitted', event);
+  });
+
+
 var $min = document.querySelector('.row [name="min"]'),
     $max = document.querySelector('.row [name="max"]');
 
