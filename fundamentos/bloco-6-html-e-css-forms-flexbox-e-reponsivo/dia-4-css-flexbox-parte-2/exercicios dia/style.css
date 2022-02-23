@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -61,6 +64,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-basis: 700px;
+  flex-grow: 10;
 }
 
 .movie-container h2 {
