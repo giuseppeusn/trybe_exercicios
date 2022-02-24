@@ -39,7 +39,8 @@ section {
 }
 
 figure {
-    margin: 0;
+  margin-left: 0;
+  margin-top: 40px;
 }
 
 figcaption {
