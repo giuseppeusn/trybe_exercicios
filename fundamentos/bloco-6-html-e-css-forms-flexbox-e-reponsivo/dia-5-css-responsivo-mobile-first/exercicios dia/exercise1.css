@@ -15,7 +15,7 @@ body {
 }
 
 article {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 h1 {
@@ -45,4 +45,23 @@ figure {
 
 figcaption {
   font-size: .8em;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: rgb(195, 195, 195);
+  }
+  article {
+    font-size: 30px;
+  }
+  figure {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  .images {
+    display: flex;
+    width: 1000px;
+    flex-wrap: wrap;
+  }
 }
