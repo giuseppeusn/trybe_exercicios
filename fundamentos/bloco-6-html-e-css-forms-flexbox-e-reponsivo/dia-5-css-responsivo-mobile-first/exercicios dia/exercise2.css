@@ -70,7 +70,7 @@ header p {
     display: flex;
   }
   h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
   
   h2 {
@@ -81,9 +81,36 @@ header p {
     font-size: 20px;
     text-align: center;
   }
+
+  .aside-one li, .aside-two li, header li {
+    font-size: 20px;
+  }
   
-  .aside-one li, .aside-two li, header li, p {
+  p {
     text-align: justify;
     font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .asides {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+  }
+
+  .main-content {
+    width: 60%;
+    margin-left: 20px;
+  }
+
+  .asides {
+    width: 40%;
+    align-items: flex-start;
   }
 }
