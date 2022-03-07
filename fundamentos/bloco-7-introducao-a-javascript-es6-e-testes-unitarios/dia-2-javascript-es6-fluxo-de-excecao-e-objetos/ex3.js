@@ -102,3 +102,42 @@ const verifyPair = (obj, key, value) => {
 
 console.log(verifyPair(lesson3, 'turno', 'noite'));
 console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
+
+// ---------- Exercício bônus ----------
+
+const contMath = () => {
+  const obj = Object.values(allLessons);
+  const length = obj.length;
+  let estudantes = 0;
+
+  for (let x = 0; x < length; x += 1) {
+    obj[x].materia.includes('Matemática') ? estudantes += obj[x].numeroEstudantes : null;
+  }
+  
+  return estudantes;
+}
+
+console.log(contMath());
+
+const createReport = (object, name) => {
+  const obj = Object.values(object);
+  const length = obj.length;
+  const report = {};
+  let aulas = [];
+  let estudantes = 0;
+  report.professor = name;
+
+  for (let x = 0; x < length; x += 1) {
+    if (obj[x].professor.includes(name)) {
+      aulas.push(obj[x].materia);
+      estudantes += obj[x].numeroEstudantes;
+    }
+  }
+
+  report.aulas = aulas;
+  report.estudantes = estudantes;
+
+  return report;
+}
+
+console.log(createReport(allLessons, 'Maria Clara'));
