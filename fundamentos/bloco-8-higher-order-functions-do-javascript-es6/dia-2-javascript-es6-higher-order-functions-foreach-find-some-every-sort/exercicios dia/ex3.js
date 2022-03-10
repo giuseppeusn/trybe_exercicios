@@ -1,7 +1,6 @@
 const object = require('./object.js');
 const books = object();
 
-
 function getNamedBook() {
   let nameBook;
   
