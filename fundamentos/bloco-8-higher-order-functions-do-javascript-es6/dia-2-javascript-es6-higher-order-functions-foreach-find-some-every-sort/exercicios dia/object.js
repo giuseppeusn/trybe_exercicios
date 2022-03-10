@@ -1,4 +1,3 @@
-
 const object = () => {
   const books = [
     {
@@ -62,7 +61,7 @@ const object = () => {
       releaseYear: 1928,
     },
   ];
-  
+
   return books;
 }
 
