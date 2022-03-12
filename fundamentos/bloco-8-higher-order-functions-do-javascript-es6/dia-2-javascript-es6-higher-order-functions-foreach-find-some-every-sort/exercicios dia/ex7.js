@@ -56,3 +56,9 @@ const authorUnique3 = () => {
 }
 
 console.log(authorUnique3());
+
+//Solução 3 (map e filter refatorado em uma linha)
+
+const authorUnique4 = () => books.map((item) => item.author.birthYear).filter((item, index, arr) => arr.indexOf(item) != index).length !== 0 ? false : true;
+
+console.log(authorUnique4());
