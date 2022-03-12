@@ -1,7 +1,7 @@
 const object = require('./object.js');
 const books = object();
 
-//Solução 1
+//Solução 1 (forEach dentro de outro forEach)
 
 const authorUnique = () => {
   let birthYearArray = [];
@@ -39,6 +39,20 @@ const authorUnique2 = () => {
   return answer;
 }
 
-let findDuplicates = arr => arr.filter((item, index) => arr.indexOf(item) != index)
+const findDuplicates = arr => arr.filter((item, index) => arr.indexOf(item) != index)
 
 console.log(authorUnique2());
+
+//Solução 3 (map e filter)
+
+const authorUnique3 = () => {
+  const answer = books.map((item) => item.author.birthYear).filter((item, index, arr) => arr.indexOf(item) != index);
+
+  if(answer.length !== 0) {
+    return false
+  }
+
+  return true;
+}
+
+console.log(authorUnique3());
