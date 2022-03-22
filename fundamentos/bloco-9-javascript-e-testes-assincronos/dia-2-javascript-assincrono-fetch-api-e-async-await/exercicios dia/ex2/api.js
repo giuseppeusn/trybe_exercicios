@@ -1,4 +1,12 @@
-const API_URL = 'https://api.coincap.io/v2/assets';
+const APIcrypcoin = 'https://api.coincap.io/v2/assets';
+const APIcurrency = 'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.json'
+
+const fetchCurrency = async () => {
+  return fetch(APIcurrency)
+    .then(response => response.json())
+    .then(data => data.usd.brl);
+}
+fetchCurrency()
 
 const fetchList = () => {
   const myObject = {
@@ -6,15 +14,17 @@ const fetchList = () => {
     redirect: 'follow'
   };
 
-  fetch(API_URL, myObject)
+  fetch(APIcrypcoin, myObject)
     .then(response => response.json())
     .then(data => showList(data.data))
     .catch(error => console.log('error', error));
 };
 
-const showList = (data) => {
+const showList = async (data) => {
+  const dolar = await fetchCurrency();
+  const coins = data.map((item) => `${item.name} (${item.symbol}): R$ ${(item.priceUsd * dolar).toFixed(2)}`).filter((item, index) => index < 10);
+
   const place = document.getElementById('list');
-  const coins = data.map((item) => `${item.name} (${item.symbol}): USD ${parseFloat(item.priceUsd).toFixed(2)}`).filter((item, index) => index < 10);
   coins.forEach((elem) => place.innerHTML += `<li>${elem}</li>`);
 }
 
