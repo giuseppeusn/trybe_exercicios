@@ -1,0 +1,40 @@
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokedex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  padding: 30px;
+}
+
+.title {
+  font-family: 'Pokemon Solid', sans-serif;
+  font-size: 50px;
+  margin: 10px;
+  color: yellow;
+  text-shadow: 4px 4px 1px blue;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 350px;
+  height: 200px;
+  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.4);
+  
+}
+
+.card p {
+  font-size: 18px;
+}
