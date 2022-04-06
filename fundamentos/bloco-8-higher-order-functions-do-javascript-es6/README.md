@@ -17,4 +17,4 @@ Neste bloco aprendemos a utilizar <b>funções</b> de diferentes formas, aplicar
 
  ## Projeto desenvolvido
  
- - [Zoo functions - JavaScript]()
+ - [Zoo functions - JavaScript](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/javascript-zoo-functions)
