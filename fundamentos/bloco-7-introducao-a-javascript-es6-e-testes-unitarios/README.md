@@ -13,4 +13,4 @@ Neste bloco aprendemos sobre o <b>JavaScript ES6</b> e suas novas <i>features</i
 
  ## Projeto desenvolvido
  
- - [JavaScript Testes Unitários - JavaScript]()
+ - [JavaScript Testes Unitários - JavaScript](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/javascript-testes-unitarios)
