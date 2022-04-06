@@ -12,4 +12,4 @@ Neste bloco aprendemos a como criar <b>funções assíncronas</b>, utilizar <b>c
 
  ## Projeto desenvolvido
  
- - [Carrinho de compras - JavaScript, HTML e CSS]()
+ - [Carrinho de compras - JavaScript, HTML e CSS](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/html-css-e-javascript-carrinho-de-compras)
