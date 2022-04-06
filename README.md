@@ -54,38 +54,38 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 6-3: _CSS Flexbox - Parte 1_
 - [x] 6-4: _CSS Flexbox - Parte 2_
 - [x] 6-5: _CSS Responsivo - Mobile First_
-- [x] 6-6: _[Projeto - Trybewarts]()_
+- [x] 6-6: _[Projeto - Trybewarts](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/html-css-e-javascript-trybewarts)_
 
-##### Bloco 7: JavaScript ES6 & Testes Unitários
+##### [Bloco 7:](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/bloco-7-introducao-a-javascript-es6-e-testes-unitarios) JavaScript ES6 & Testes Unitários
 
 - [x] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [x] 7-2: _JavaScript ES6 - Fluxo de exceção e Objetos_
 - [x] 7-3: _Testes unitários em JavaScript_
-- [x] 7-4: _[Projeto - JavaScript Testes Unitários]()_
+- [x] 7-4: _[Projeto - JavaScript Testes Unitários](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/javascript-testes-unitarios)_
 
-##### Bloco 8: JavaScript ES6
+##### [Bloco 8:](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/bloco-8-higher-order-functions-do-javascript-es6) JavaScript ES6
 
 - [x] 8-1: _JavaScript ES6 - Introdução a Higher Order Functions_
 - [x] 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
 - [x] 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
 - [x] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
 - [x] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
-- [x] 8-6: _[Projeto - Zoo functions]()_
+- [x] 8-6: _[Projeto - Zoo functions](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/javascript-zoo-functions)_
 
-##### Bloco 9: Assincronicidade & Callbacks
+##### [Bloco 9:](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/bloco-9-javascript-e-testes-assincronos) Assincronicidade & Callbacks
 
 - [x] 9-1: _JavaScript Assíncrono e Callbacks_
 - [x] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
 - [x] 9-3: _Jest - Testes Assíncronos_
-- [x] 9-4: _[Projeto - Carrinho de Compras]()_
+- [x] 9-4: _[Projeto - Carrinho de Compras](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/html-css-e-javascript-carrinho-de-compras)_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
 ##### Bloco 11: Introdução - React
 
-- [ ] 11-1: _'Hello, world!' no React!_
-- [ ] 11-2: _Componentes React_
-- [ ] 11-3: _[Projeto - Movie Cards Library]()_
+- [x] 11-1: _'Hello, world!' no React!_
+- [x] 11-2: _Componentes React_
+- [ ] 11-3: _[Projeto - Sistema Solar]()_
 
 ##### Bloco 12: React
 
