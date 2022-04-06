@@ -15,7 +15,15 @@ Os primeiros passos para iniciar a carreira no mundo de Desenvolvimento Web.
 - Escrever **testes unitários**.
 
 ## Projetos desenvolvidos
+
 * [Lessons Learned - HTML & CSS](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/html-e-css-lessons-learned)
 * [Playground Functions - JavaScript](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/javascript-playground-functions)
 * [Arte com Pixels - JavaScript, HTML & CSS]()
 * [Lista de tarefas - JavaScript, HTML & CSS]()
+* [(Bônus) Meme Generator - JavaScript, HTML & CSS]()
+* [(Bônus) Advinhe a Cor - JavaScript, HTML & CSS]()
+* [(Bônus) Carta Misteriosa - JavaScript, HTML & CSS]()
+* [Trybewarts - JavaScript, HTML & CSS]()
+* [JavaScript Testes Unitários - JavaScript]()
+* [Zoo functions - JavaScript]()
+* [Carrinho de compras - JavaScript, HTML & CSS]()
