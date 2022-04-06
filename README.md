@@ -85,7 +85,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 11-1: _'Hello, world!' no React!_
 - [x] 11-2: _Componentes React_
-- [ ] 11-3: _[Projeto - Sistema Solar]()_
+- [x] 11-3: _[Projeto - Sistema Solar](https://github.com/giuseppeusn/trybe_exercicios/tree/main/front-end/projetos/react-sistema-solar)_
 
 ##### Bloco 12: React
 
