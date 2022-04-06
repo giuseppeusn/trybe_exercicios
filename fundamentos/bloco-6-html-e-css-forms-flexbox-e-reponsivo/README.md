@@ -16,4 +16,4 @@ Neste bloco aprendemos a fazer <b>formulários</b> em HTML, utilizar <b>bibliote
 
  ## Projeto desenvolvido
  
- - [Trybeawarts - JavaScript, HTML e CSS]()
+ - [Trybeawarts - JavaScript, HTML e CSS](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/html-css-e-javascript-trybewarts)
