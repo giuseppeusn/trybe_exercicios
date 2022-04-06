@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  align-items: center;
+  background-image: url('./images/background.jpg');
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: Raleway , sans-serif;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 2px solid white;
+  border-radius: 10px;
+  font-size: xx-large;
+  margin: 20px;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.solar-system {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin: 20px;
+}
+
+.title h2 {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: auto;
+  padding-bottom: 13px;
+  text-align: center;
+  text-shadow: black 3px 5px 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 300px;
+}
+
+.title h2:before {
+  background: linear-gradient(90deg, rgba(179, 0, 255, 1) 50%, blue 100%);
+  content: '';
+  display: block;
+  height: 5px;
+  margin-bottom: 5px;
+  width: 120px;
+}
+
+.title h2:after {
+  background: linear-gradient(90deg, rgba(179, 0, 255, 1) 50%, blue 100%);
+  bottom: 0;
+  content: '';
+  display: block;
+  float: right;
+  height: 5px;
+  margin-bottom: 0.25em;
+  width: 120px;
+}
+
+.planets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.planet-card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 230px;
+}
+
+.planet-card img {
+  transition: all 0.3s ease;
+  width: 180px;
+}
+
+.planet-card img:hover {
+  width: 230px;
+}
+
+.missions {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.missions-session {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mission-card {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 2px solid white;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 270px;
+}
+
+.mission-name {
+  border-bottom: 1px solid white;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
