@@ -1,5 +1,7 @@
 version: '3'
+
 services:
+
   ghost:
     image: ghost:1-alpine
     restart: always
@@ -13,6 +15,7 @@ services:
       - database__connection__password=root
     depends_on:
       - db
+
   db:
     image: mysql:5.7
     environment:
