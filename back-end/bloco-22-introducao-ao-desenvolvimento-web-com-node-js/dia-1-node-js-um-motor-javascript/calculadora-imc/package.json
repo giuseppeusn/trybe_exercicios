@@ -1,0 +1,15 @@
+{
+  "name": "calculadora_imc",
+  "version": "1.0.0",
+  "description": "script para calcular o IMC de uma pessoa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "imc": "node index"
+  },
+  "author": "Giuseppe Nunes",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
