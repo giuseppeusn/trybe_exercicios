@@ -5,11 +5,11 @@ const menu = () => {
   const answer = readline.question('\nQuer jogar novamente? y/n');
 
   if (answer === 'y') {
-    main();
+    mainRaffle();
   }
 }
 
-const main = () => {
+const mainRaffle = () => {
   const value = readline.questionInt('\nQual e seu chute de numero?');
   const randomValue = random();
 
@@ -22,4 +22,4 @@ const main = () => {
   menu();
 }
 
-main();
+module.exports = mainRaffle;

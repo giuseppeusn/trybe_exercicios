@@ -20,16 +20,16 @@ const imcType = (calculatedImc) => {
   }
 }
 
-const main = () => {
-  const userWeight = readline.questionFloat('Qual e o seu peso?');
-  const userHeight = readline.questionInt('Qual e a sua altura em centimetros?');
+const mainImc = () => {
+  const userWeight = readline.questionFloat('\nQual e o seu peso?');
+  const userHeight = readline.questionInt('\nQual e a sua altura em centimetros?');
 
   const calculatedImc = imc(userWeight, userHeight);
 
   
 
   console.log(`\nPeso: ${userWeight} | Altura: ${userHeight}`);
-  console.log(`O seu IMC é ${calculatedImc} (${imcType(calculatedImc)})`);
+  console.log(`\nO seu IMC é ${calculatedImc} (${imcType(calculatedImc)})`);
 }
 
-main();
+module.exports = mainImc;
