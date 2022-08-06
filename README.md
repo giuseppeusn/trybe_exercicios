@@ -8,18 +8,18 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Fundamentos do Desenvolvimento Web :white_check_mark:
 
-##### [Bloco 1:](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/bloco-1-unix-e-bash) Introdução - Unix & Shell
+##### Bloco 1: Introdução - Unix & Shell
 
 - [x] 1-3: _Unix & Shell- Parte 1_
 - [x] 1-4: _Unix & Shell- Parte 2_
 
-##### [Bloco 2:](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/bloco-2-git-github-e-internet) Git & GitHub
+##### Bloco 2: Git & GitHub
 
 - [x] 2-1: _O que é e para que serve?_
 - [x] 2-2: _Entendendo os comandos_
 - [x] 2-3: _Internet - Entendendo como ela funciona_
 
-##### [Bloco 3:](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/bloco-3-introducao-a-html-e-css) Introdução - HTML & CSS
+##### Bloco 3: Introdução - HTML & CSS
 
 - [x] 3-1: _HTML & CSS - Estruturas de página_
 - [x] 3-2: _HTML & CSS - Primeiros passos em CSS_
@@ -27,7 +27,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 3-4: _HTML Semântico_
 - [x] 3-5: _[Projeto - HTML & CSS](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/html-e-css-lessons-learned)_
 
-##### [Bloco 4:](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/bloco-4-introducao-a-javascript-e-logica-de-programacao) Introdução - JavaScript 
+##### Bloco 4: Introdução - JavaScript 
 
 - [x] 4-1: _JavaScript - Primeiros passos_
 - [x] 4-2: _JavaScript - Array e loop For_
@@ -35,7 +35,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 4-4: _JavaScript - Objetos e funções_
 - [x] 4-5: _[Projeto - Playground Functions](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/javascript-playground-functions)_
 
-##### [Bloco 5:](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/bloco-5-javascript-dom-eventos-e-web-storage) Introdução - JavaScript - Projetos
+##### Bloco 5: Introdução - JavaScript - Projetos
 
 - [x] 5-1: _JavaScript - DOM e seletores_
 - [x] 5-2: _JavaScript - Trabalhando com elementos_
@@ -47,7 +47,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-7: _[(Bônus) Projeto - Adivinhe a Cor](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/html-css-e-javascript-advinhe-a-cor)_
 - [x] 5-7: _[(Bônus) Projeto - Carta Misteriosa](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/html-css-e-javascript-carta-misteriosa)_
 
-##### [Bloco 6:](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/bloco-6-html-e-css-forms-flexbox-e-reponsivo) HTML & CSS avançado
+##### Bloco 6: HTML & CSS avançado
 
 - [x] 6-1: _HTML & CSS - Forms_
 - [x] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
@@ -56,14 +56,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 6-5: _CSS Responsivo - Mobile First_
 - [x] 6-6: _[Projeto - Trybewarts](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/html-css-e-javascript-trybewarts)_
 
-##### [Bloco 7:](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/bloco-7-introducao-a-javascript-es6-e-testes-unitarios) JavaScript ES6 & Testes Unitários
+##### Bloco 7: JavaScript ES6 & Testes Unitários
 
 - [x] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [x] 7-2: _JavaScript ES6 - Fluxo de exceção e Objetos_
 - [x] 7-3: _Testes unitários em JavaScript_
 - [x] 7-4: _[Projeto - JavaScript Testes Unitários](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/javascript-testes-unitarios)_
 
-##### [Bloco 8:](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/bloco-8-higher-order-functions-do-javascript-es6) High Order Functions do JavaScript ES6
+##### Bloco 8: High Order Functions do JavaScript ES6
 
 - [x] 8-1: _JavaScript ES6 - Introdução a Higher Order Functions_
 - [x] 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
@@ -72,7 +72,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
 - [x] 8-6: _[Projeto - Zoo functions](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/projetos/javascript-zoo-functions)_
 
-##### [Bloco 9:](https://github.com/giuseppeusn/trybe_exercicios/tree/main/fundamentos/bloco-9-javascript-e-testes-assincronos) JavaScript e Testes Assíncronos
+##### Bloco 9: JavaScript e Testes Assíncronos
 
 - [x] 9-1: _JavaScript Assíncrono e Callbacks_
 - [x] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
@@ -129,11 +129,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 18-1: _Context API do React_
 - [x] 18-2: _React Hooks - useState e useContext_
 - [x] 18-3: _React Hooks - useEffect e Hooks customizados_
-- [x] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [x] 18-4: _Projeto - StarWars Datatable com Context API e Hooks_
 
 ##### Bloco 18: Projeto Final de Front-end
 
-- [x] 19-1: _[Projeto - App de Receitas]()_
+- [x] 19-1: _Projeto - App de Receitas_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
@@ -142,29 +142,31 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 19-1: _Utilizando containers - Docker_
 - [x] 19-2: _Manipulando imagens no Docker_
 - [x] 19-3: _Orquestrando containers com Docker Compose_
-- [ ] 19-4: _[Projeto - Docker Todo-List]()_
+- [x] 19-4: _Projeto - Docker Todo-List_
 
 ##### Bloco 20: Introdução à SQL
 
-- [ ] 20-1: _Banco de dados SQL_
-- [ ] 20-2: _Encontrando dados em um banco de dados_
-- [ ] 20-3: _Filtrando dados de forma específica_
-- [ ] 20-4: _Manipulando tabelas_
-- [ ] 20-5: _[Projeto - All For One]()_
+- [x] 20-1: _Banco de dados SQL_
+- [x] 20-2: _Encontrando dados em um banco de dados_
+- [x] 20-3: _Filtrando dados de forma específica_
+- [x] 20-4: _Manipulando tabelas_
+- [x] 20-5: _Projeto - All For One_
 
-##### Bloco 21: Bancos de dados relacionais
+##### Bloco 21: Funções SQL, JOINs e normalização
 
-- [ ] 21-1: _Funções mais usadas no SQL_
-- [ ] 21-2: _Descomplicando JOINs e UNIONs_
-- [ ] 21-3: _Stored Routines & Subqueries_
-- [ ] 21-4: _[Projeto - Vocabulary Booster]()_
+- [x] 21-1: _Funções mais usadas no SQL_
+- [x] 21-2: _Descomplicando JOINs_
+- [x] 21-3: _Transformando ideias em um modelo de banco de dados_
+- [x] 21-4: _Projeto - One For All_
 
-##### Bloco 22: Bancos de dados relacionais
+##### Bloco 22: Introdução ao desenvolvimento Web com Node.js
 
-- [ ] 22-1: _Transformando ideias em um modelo de banco de dados_
-- [ ] 22-2: _Normalização, Formas Normais e Dumps_
-- [ ] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
-- [ ] 22-3: _[Projeto - One For All]()_
+- [x] 22-1: _Node.js - um motor JavaScript_
+- [x] 22-2: _Node.js - Fluxo Assíncrono_
+- [x] 22-3: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
+- [x] 22-4: _Express - HTTP com Node.js_
+- [x] 22-5: _Express - Middlewares_
+- [x] 22-6: _Projeto - Talker Manager_
 
 ##### Bloco 23: Introdução - NoSQL
 
