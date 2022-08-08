@@ -8,12 +8,13 @@ const getCep = async (cep) => {
   }
 
   const result = await cepModels.getCep(cep);
+  result[0].cep = `${result[0].cep.substring(0, 5)}-${result[0].cep.substring(5, 8)}`;
 
   if (!result.length) {
     return { reqCode: 404, code: 'notFound', message: 'CEP não encontrado' };
   }
 
-  return { reqCode: 200, response: result[0] };
+  return { reqCode: 200, response: result };
 }
 
 module.exports = { getCep };
