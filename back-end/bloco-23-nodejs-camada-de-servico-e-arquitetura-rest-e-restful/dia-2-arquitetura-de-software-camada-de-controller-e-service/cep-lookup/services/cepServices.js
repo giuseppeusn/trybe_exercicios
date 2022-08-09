@@ -9,12 +9,16 @@ const getCep = async (cep) => {
   }
 
   const result = await cepModels.getCep(cep);
-  result[0].cep = `${result[0].cep.substring(0, 5)}-${result[0].cep.substring(5, 8)}`;
-
+  
   if (!result.length) {
-    return { resCode: 404, code: 'notFound', message: 'CEP não encontrado' };
-  }
+    const externalCep = await cepModels.getExternalCep(cep);
 
+    if (externalCep.erro) return { resCode: 404, code: 'notFound', message: 'CEP não encontrado' };
+
+    return { resCode: 200, response: externalCep };
+  }
+  
+  result[0].cep = `${result[0].cep.substring(0, 5)}-${result[0].cep.substring(5, 8)}`;
   return { resCode: 200, response: result[0] };
 }
 
