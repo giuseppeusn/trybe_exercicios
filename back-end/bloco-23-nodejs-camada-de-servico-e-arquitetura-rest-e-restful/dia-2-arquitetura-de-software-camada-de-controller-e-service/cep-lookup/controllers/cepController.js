@@ -7,6 +7,15 @@ const getCep = async (req, res) => {
   if (message) res.status(resCode).json({ error: { code, message } });
 
   res.status(resCode).json(response);
-}
+};
 
-module.exports = { getCep };
+const createCep = async (req, res) => {
+  const data = req.body;
+  const { resCode, code, message, response } = await cepServices.createCep(data);
+
+  if (message) res.status(resCode).json({ error: { code, message } });
+
+  res.status(resCode).json(response);
+};
+
+module.exports = { getCep, createCep };
